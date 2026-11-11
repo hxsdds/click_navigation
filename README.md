@@ -83,6 +83,10 @@ CLICK_NAV_GUI=false bash scripts/start_click_navigation.sh
 
 初次演示可以先试机器狗 `(-1,-6)`，再试无人机 `(0,-4,3)`；目标是否可用还取决于当时的位置和另一个平台的状态。请先预览再开始。
 
+下面是本次实际验收页面：目标 `(2,-15,3)` 已到达；查看切片仍为约 6 m，目标高度与查看高度相互独立。
+
+![无人机浏览器导航到达示例](docs/evidence/browser_drone_overview.jpg)
+
 ## 4. 地图、控制和能力范围
 
 - 正式地图：`config/static_navigation_map.json`，版本 `chemical_plant_v4_static11`。原始 OctoMap 0.15 m，规划网格 0.3 m。
@@ -117,6 +121,8 @@ python3 scripts/test_click_navigation_http.py --url http://localhost:8765/drone 
 上述两个测试应**先后运行**。测试包含无效目标拒绝、任务互斥、预览取消、运动取消和目标到达；取消测试自身也会产生运动。单平台模式下 URL 不加 `/dog` 或 `/drone`。
 
 也可直接运行 `bash scripts/acceptance.sh dog`、`bash scripts/acceptance.sh drone`；不加参数时先后测试两个平台并审计轨迹。该入口用于已启动的双平台模式。
+
+HTTP 测试完成且无人机已在空中时，可继续运行 `bash scripts/acceptance_ros.sh`，验证 Action、目标话题和执行/取消服务。不要在无人机仍位于地面时直接运行此接口套件。
 
 实际轨迹可以独立复核：
 

@@ -17,6 +17,7 @@
 | 浏览器机器狗操作 | 真实填写坐标、预览、点击开始，到达 `(-5,-7)`，页面误差约 0.176 m |
 | 浏览器无人机操作 | 真实填写 XYZ、预览、点击开始，到达 `(2,-15,3)`，页面误差约 0.060 m；Gazebo 跟随按钮正常 |
 | 轨迹独立审计 | 机器狗与无人机全部 HTTP 验收运动/取消轨迹通过地图及 SDF 净空检查，3 cm 插值检查无禁行点 |
+| 全新 Git clone | 另一个 Linux 目录中从提交 a293764 本地 clone，独立准备依赖并重新构建 10 个包；32 项测试、自检与包来源检查通过 |
 
 ## 机器狗运动结果
 
@@ -50,3 +51,11 @@
 原始日志与逐任务轨迹保存在本机 `test_artifacts/`。可提交的精简证据位于 `docs/evidence/`，其中 `map11_qa.json`、`planning11_optimized.json` 是随正式地图保留的 2026-11-09 历史地图证据，与本次新运动测试区分。
 
 当前能力边界仍是冻结静态地图、Gazebo 真值反馈与 SITL；不包含在线动态避障、独立 SLAM 定位或实机验证，也不保证任意目标均可达。
+
+## Git clone 复现检查
+
+使用 `git clone --no-local` 从初次提交 `a293764` 创建 `/tmp/click_navigation_clone.udYRWF`。验证开始时 clone 中没有 `build/`、`install/`、`_deps/`。随后把已验证同版本运行缓存复制进 clone，清除旧工作空间环境变量，再使用 clone 自己的 `scripts/build.sh`、`scripts/test.sh` 与 `doctor.py`。
+
+10 个包全新构建用时约 2 分 19 秒，32 项单元测试通过。所有包的 ament 来源前缀均位于 clone 的 `install/` 内，地图哈希和动态库检查通过。详细来源记录见 `docs/evidence/clean_clone.json`。因此这个检查没有借用主提取目录的 build/install，也不依赖原 `uav_dog_plume` 工作空间。
+
+本次真实双平台仿真与运动验收在主提取目录完成；clone 另行验证的是依赖准备、全新构建、单元测试、自检和包路径独立性，没有把同一批运动结果重复算作 clone 后重跑。

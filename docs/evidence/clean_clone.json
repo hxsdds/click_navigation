@@ -1,0 +1,21 @@
+{
+  "pass": true,
+  "clone_root": "/tmp/click_navigation_clone.udYRWF",
+  "source_root": "/mnt/d/wsl_museum/click_navigation",
+  "source_commit": "a293764",
+  "fresh_build_and_install": true,
+  "runtime_method": "independent local cache import",
+  "unit_tests": 32,
+  "package_prefixes": {
+    "uav_dog_nav2": "/tmp/click_navigation_clone.udYRWF/install/uav_dog_nav2",
+    "uav_dog_sim": "/tmp/click_navigation_clone.udYRWF/install/uav_dog_sim",
+    "go2_description": "/tmp/click_navigation_clone.udYRWF/install/go2_description",
+    "unitree_guide_controller": "/tmp/click_navigation_clone.udYRWF/install/unitree_guide_controller",
+    "controller_common": "/tmp/click_navigation_clone.udYRWF/install/controller_common",
+    "gz_quadruped_hardware": "/tmp/click_navigation_clone.udYRWF/install/gz_quadruped_hardware",
+    "control_input_msgs": "/tmp/click_navigation_clone.udYRWF/install/control_input_msgs",
+    "px4_msgs": "/tmp/click_navigation_clone.udYRWF/install/px4_msgs",
+    "keyboard_input": "/tmp/click_navigation_clone.udYRWF/install/keyboard_input",
+    "gz_quadruped_playground": "/tmp/click_navigation_clone.udYRWF/install/gz_quadruped_playground"
+  }
+}
