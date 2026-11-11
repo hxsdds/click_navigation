@@ -18,10 +18,12 @@
 
 ## 2. 从 clone 到运行
 
-以下命令在 Ubuntu/WSL 的 **bash 终端**执行。先把示例中的仓库地址换成你发布后的真实地址；当前本地仓库尚未配置远程地址。
+项目仓库：[hxsdds/click_navigation](https://github.com/hxsdds/click_navigation)。以下命令在 Ubuntu/WSL 的 **bash 终端**执行。
+
+当前仓库为**私有仓库**。其他使用者需要先由仓库所有者邀请为协作者，接受邀请后使用自己的 GitHub 账号完成 Git 身份验证，再执行 clone。网页可以访问仓库不代表 Ubuntu/WSL 的 Git 已登录；如提示 `Repository not found`，先检查账号是否获授权。HTTPS 验证使用 GitHub 支持的凭据管理器或个人访问令牌，不使用账号密码，也不要将令牌写入 clone 地址、脚本或提交到仓库。
 
 ```bash
-git clone <你的仓库地址> click_navigation
+git clone https://github.com/hxsdds/click_navigation.git
 cd click_navigation
 
 # 安装本项目所需的系统包；需要 sudo，ROS 软件源必须已配置
