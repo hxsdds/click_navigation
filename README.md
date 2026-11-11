@@ -20,7 +20,7 @@
 
 项目仓库：[hxsdds/click_navigation](https://github.com/hxsdds/click_navigation)。以下命令在 Ubuntu/WSL 的 **bash 终端**执行。
 
-当前仓库为**私有仓库**。其他使用者需要先由仓库所有者邀请为协作者，接受邀请后使用自己的 GitHub 账号完成 Git 身份验证，再执行 clone。网页可以访问仓库不代表 Ubuntu/WSL 的 Git 已登录；如提示 `Repository not found`，先检查账号是否获授权。HTTPS 验证使用 GitHub 支持的凭据管理器或个人访问令牌，不使用账号密码，也不要将令牌写入 clone 地址、脚本或提交到仓库。
+当前仓库为**公共仓库**，任何人都可以查看、下载和执行下面的 HTTPS clone 命令，**无需登录 GitHub，也无需协作者邀请**。向本仓库直接提交代码仍需仓库所有者授予写入权限并完成身份验证；其他贡献者可以通过 Fork 和 Pull Request 提交修改。不要将访问令牌写入 clone 地址、脚本或提交到仓库。
 
 ```bash
 git clone https://github.com/hxsdds/click_navigation.git
