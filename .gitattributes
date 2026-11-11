@@ -1,0 +1,21 @@
+* text=auto eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.html text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
+# The validated world's checksum is over the exact source bytes.
+*.world -text
+*.bin binary
+*.bt binary
+*.dae binary
+*.stl binary
+*.STL binary
+*.png binary
+*.jpg binary
+# Preserve vendored/source-map whitespace; lint owned code separately.
+src/quadruped_ros2_control/** -whitespace
+src/px4_msgs/** -whitespace
+worlds/*.world -whitespace
+src/uav_dog_sim/worlds/*.world -whitespace

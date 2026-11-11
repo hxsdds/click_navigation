@@ -1,0 +1,132 @@
+{
+  "world_sha256": "16962074e43f753f286e00659faae1cd13d5b10c11084f3f8dd554c65a969614",
+  "comparisons": [
+    {
+      "grid": "maps/chemical_plant_v4_3d_resurvey9_known_0p3.bin",
+      "sha256": "16a1cade83859aa2437c36d0381733ec152731a8794a59fdc665455591942387",
+      "layers": [
+        {
+          "z_center": 0.44999999999999996,
+          "occupied_in_roi": 1869,
+          "ghost_farther_0p6m": 0,
+          "states_percent": {
+            "unknown": 12.874310052588116,
+            "free": 85.08409752705464,
+            "occupied": 2.0415924203572513
+          },
+          "drone_blocked_percent": 100.0
+        },
+        {
+          "z_center": 1.65,
+          "occupied_in_roi": 1831,
+          "ghost_farther_0p6m": 157,
+          "states_percent": {
+            "unknown": 15.691685862053978,
+            "free": 82.29388500152113,
+            "occupied": 2.014429136424877
+          },
+          "drone_blocked_percent": 46.47420574557782
+        },
+        {
+          "z_center": 3.15,
+          "occupied_in_roi": 615,
+          "ghost_farther_0p6m": 42,
+          "states_percent": {
+            "unknown": 12.73306097613977,
+            "free": 86.58133773740711,
+            "occupied": 0.685601286453127
+          },
+          "drone_blocked_percent": 46.16345777739145
+        },
+        {
+          "z_center": 6.1499999999999995,
+          "occupied_in_roi": 1023,
+          "ghost_farther_0p6m": 536,
+          "states_percent": {
+            "unknown": 14.922421661089139,
+            "free": 83.76613499065583,
+            "occupied": 1.3114433482550307
+          },
+          "drone_blocked_percent": 52.65982876265809
+        },
+        {
+          "z_center": 8.549999999999999,
+          "occupied_in_roi": 511,
+          "ghost_farther_0p6m": 488,
+          "states_percent": {
+            "unknown": 6.31383371724108,
+            "free": 93.00817071580686,
+            "occupied": 0.6779955669520622
+          },
+          "drone_blocked_percent": 45.34529966534834
+        }
+      ],
+      "free_samples": 50000,
+      "free_samples_deep_inside_collision": 27
+    },
+    {
+      "grid": "maps/chemical_plant_v4_candidate11_known_0p3.bin",
+      "sha256": "70042553f00624008d42dc52a0f2f6a61c893f5c09607fcff22289d32f9f5310",
+      "layers": [
+        {
+          "z_center": 0.44999999999999996,
+          "occupied_in_roi": 5507,
+          "ghost_farther_0p6m": 0,
+          "states_percent": {
+            "unknown": 14.421530705376156,
+            "free": 79.55147985570864,
+            "occupied": 6.026989438915207
+          },
+          "drone_blocked_percent": 100.0
+        },
+        {
+          "z_center": 1.65,
+          "occupied_in_roi": 5422,
+          "ghost_farther_0p6m": 0,
+          "states_percent": {
+            "unknown": 13.356729975227086,
+            "free": 80.68581859272459,
+            "occupied": 5.9574514320483285
+          },
+          "drone_blocked_percent": 36.01090877482724
+        },
+        {
+          "z_center": 3.15,
+          "occupied_in_roi": 3160,
+          "ghost_farther_0p6m": 0,
+          "states_percent": {
+            "unknown": 7.513364335694728,
+            "free": 88.10791429440654,
+            "occupied": 4.378721369898735
+          },
+          "drone_blocked_percent": 30.63366508757443
+        },
+        {
+          "z_center": 6.1499999999999995,
+          "occupied_in_roi": 2047,
+          "ghost_farther_0p6m": 0,
+          "states_percent": {
+            "unknown": 5.413099222043549,
+            "free": 92.36277108957364,
+            "occupied": 2.224129688382807
+          },
+          "drone_blocked_percent": 22.416228432352558
+        },
+        {
+          "z_center": 8.549999999999999,
+          "occupied_in_roi": 76,
+          "ghost_farther_0p6m": 0,
+          "states_percent": {
+            "unknown": 2.7608761788865226,
+            "free": 97.15654743795906,
+            "occupied": 0.08257638315441783
+          },
+          "drone_blocked_percent": 22.13916293624234
+        }
+      ],
+      "free_samples": 50000,
+      "free_samples_deep_inside_collision": 0
+    }
+  ],
+  "pass": true
+}

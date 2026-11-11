@@ -1,0 +1,46 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Global Options:
+    Fixed Frame: map
+    Background Color: 220; 228; 235
+  Displays:
+    - Class: rviz_default_plugins/Map
+      Name: Frozen Map
+      Enabled: true
+      Topic:
+        Value: /dog/click_navigation/map
+        Durability Policy: Transient Local
+    - Class: rviz_default_plugins/Path
+      Name: Checked Route
+      Enabled: true
+      Topic:
+        Value: /dog/click_navigation/path
+        Durability Policy: Transient Local
+      Line Style: Lines
+      Line Width: 0.08
+      Color: 0; 130; 160
+    - Class: rviz_default_plugins/Pose
+      Name: Robot
+      Enabled: true
+      Topic:
+        Value: /dog/click_navigation/pose
+      Color: 30; 130; 210
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/PublishPoint
+      Topic: /dog/clicked_point
+    - Class: rviz_default_plugins/SetGoal
+      Topic: /dog/goal_pose
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Scale: 8
+      X: 0
+      Y: 0
+Window Geometry:
+  Width: 1200
+  Height: 900

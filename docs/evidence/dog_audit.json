@@ -1,0 +1,80 @@
+{
+  "map_id": "70042553f00624008d42dc52a0f2f6a61c893f5c09607fcff22289d32f9f5310",
+  "unsupported_collision_shapes": [],
+  "dog_z_is_nominal_planning_slice": true,
+  "interpolation_spacing_m": 0.03,
+  "results": [
+    {
+      "task_id": "d58b07d60bc24fa0961054ee635e6263",
+      "platform": "dog",
+      "state": "cancelled",
+      "goal": [
+        14.5,
+        -4.0,
+        0.5
+      ],
+      "samples": 20,
+      "unsafe_map_samples": 0,
+      "minimum_sdf_clearance_m": 0.5,
+      "checked_points_including_3cm_interpolation": 20,
+      "minimum_non_ground_sdf_clearance_m": 4.359668919964242,
+      "physical_final_error_m": 18.56524011285141,
+      "peak_tilt_rad": 0.007052764398050853,
+      "pass": true
+    },
+    {
+      "task_id": "e63801ba05534713b33a82e556385a24",
+      "platform": "dog",
+      "state": "succeeded",
+      "goal": [
+        -1.0,
+        -6.0,
+        0.5
+      ],
+      "samples": 103,
+      "unsafe_map_samples": 0,
+      "minimum_sdf_clearance_m": 0.5,
+      "checked_points_including_3cm_interpolation": 172,
+      "minimum_non_ground_sdf_clearance_m": 4.312968770064886,
+      "physical_final_error_m": 0.21134321514884652,
+      "peak_tilt_rad": 0.08652666609706335,
+      "pass": true
+    },
+    {
+      "task_id": "e8d1dccc3cab4d9da45d06c19565e85d",
+      "platform": "dog",
+      "state": "succeeded",
+      "goal": [
+        -1.0,
+        -3.0,
+        0.5
+      ],
+      "samples": 314,
+      "unsafe_map_samples": 0,
+      "minimum_sdf_clearance_m": 0.5,
+      "checked_points_including_3cm_interpolation": 382,
+      "minimum_non_ground_sdf_clearance_m": 1.4957125358209944,
+      "physical_final_error_m": 0.12831104117018596,
+      "peak_tilt_rad": 0.06044017128380951,
+      "pass": true
+    },
+    {
+      "task_id": "5149c9ceda3b4d37b77daa0b77084161",
+      "platform": "dog",
+      "state": "succeeded",
+      "goal": [
+        -4.0,
+        -6.0,
+        0.5
+      ],
+      "samples": 622,
+      "unsafe_map_samples": 0,
+      "minimum_sdf_clearance_m": 0.5,
+      "checked_points_including_3cm_interpolation": 726,
+      "minimum_non_ground_sdf_clearance_m": 1.4538120341191294,
+      "physical_final_error_m": 0.21448260639655056,
+      "peak_tilt_rad": 0.042380093695910455,
+      "pass": true
+    }
+  ]
+}

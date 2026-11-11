@@ -1,0 +1,41 @@
+{
+  "version": "chemical_plant_v4_static11",
+  "created_utc": "2026-11-09T06:28:27.503390+00:00",
+  "frame": "map",
+  "cell_m": 0.3,
+  "origin": [
+    -52.0,
+    -40.0,
+    0.0
+  ],
+  "shape": [
+    346,
+    266,
+    36
+  ],
+  "octomap_resolution_m": 0.15,
+  "ground_obstacle_band_m": [
+    0.15,
+    0.9
+  ],
+  "static_map_only": true,
+  "localization_source": "Gazebo ground-truth TF; not independent localization SLAM",
+  "qa_evidence": "docs/evidence/map11_qa.json",
+  "planning_evidence": "docs/evidence/planning11_optimized.json",
+  "octomap": {
+    "file": "maps/chemical_plant_v4_static11.bt",
+    "sha256": "dfa9be84ace79cbbcf7a8920dfaaccab32c888696cd067e828485f5fac7d0190"
+  },
+  "known_grid": {
+    "file": "maps/chemical_plant_v4_static11_known_0p3.bin",
+    "sha256": "70042553f00624008d42dc52a0f2f6a61c893f5c09607fcff22289d32f9f5310"
+  },
+  "ground_grid": {
+    "file": "maps/chemical_plant_v4_static11_ground_0p3.bin",
+    "sha256": "10e47f8d247e9095e4d6a585ddd6c87951a037a375e317efa871e6998e4916be"
+  },
+  "world": {
+    "file": "worlds/chemical_plant_v4.world",
+    "sha256": "16962074e43f753f286e00659faae1cd13d5b10c11084f3f8dd554c65a969614"
+  }
+}

@@ -1,0 +1,1757 @@
+{
+  "source_project": "uav_dog_plume",
+  "copied_files": [
+    {
+      "path": "config/gz_click_shared.config",
+      "sha256": "7ec68df15975b108b59df2efa05b7bcc56f8f56cdf63967e90c797a37e2b7089"
+    },
+    {
+      "path": "config/gz_server.config",
+      "sha256": "deb59438fe80547f9aa5872aecd2f9cbe418bc455e87bdd8e730505bdb67e633"
+    },
+    {
+      "path": "config/static_navigation_map.json",
+      "sha256": "21fe670fbfd79ec0472e5a5593075ff47ef0be6eed0aee94bcf69f6964e1f31f"
+    },
+    {
+      "path": "docs/evidence/map11_qa.json",
+      "sha256": "b628cfb26347225040097b37b0da15cad338eb2e06e8a720474b39ab993dea96"
+    },
+    {
+      "path": "docs/evidence/planning11_optimized.json",
+      "sha256": "f381a33b62add695a399de891614992a5c2dd436c39c6c194155915f0a404b35"
+    },
+    {
+      "path": "maps/chemical_plant_v4_static11.bt",
+      "sha256": "dfa9be84ace79cbbcf7a8920dfaaccab32c888696cd067e828485f5fac7d0190"
+    },
+    {
+      "path": "maps/chemical_plant_v4_static11_ground_0p3.bin",
+      "sha256": "10e47f8d247e9095e4d6a585ddd6c87951a037a375e317efa871e6998e4916be"
+    },
+    {
+      "path": "maps/chemical_plant_v4_static11_known_0p3.bin",
+      "sha256": "70042553f00624008d42dc52a0f2f6a61c893f5c09607fcff22289d32f9f5310"
+    },
+    {
+      "path": "scripts/audit_click_navigation.py",
+      "sha256": "19d29a93940d27a7a5b69a47f534e0bf54ed6356353f1c3472abb4c4040606ed"
+    },
+    {
+      "path": "scripts/audit_world_clearance.py",
+      "sha256": "68e55e3ab8d91206795dbbaa6f8b6194e732a3bce28cda83877be845786192af"
+    },
+    {
+      "path": "scripts/click_navigation_gateway.py",
+      "sha256": "9593ecd149ca2909d7d649335c6fc349883e6ffcb3f1caa52d5e98106413feed"
+    },
+    {
+      "path": "scripts/plan_3d.py",
+      "sha256": "709ffec13d9eddc6ce55a4f4580285b31370c13eed84ea66e1d5209c83282426"
+    },
+    {
+      "path": "scripts/plan_goal_3d.py",
+      "sha256": "9bd8b0a2df5090cca302a7f9c1effd758fd0f28d7598db43df55f9c6309a758e"
+    },
+    {
+      "path": "scripts/prepare_click_world.py",
+      "sha256": "d29ea9b8ac24d3f9bccfdcd433c9f49d86a57c221d9fb5c761f5256f327c7065"
+    },
+    {
+      "path": "scripts/prepare_px4_truth_model.py",
+      "sha256": "612dc0b906a48027336f66f9eb123985c4ac565bb05dd845985a6171fd73fac1"
+    },
+    {
+      "path": "scripts/run_plant_world.sh",
+      "sha256": "9d99aa20164b48f04a63c750f76821834e5ca17a8e0ff49a2de111df0d7c5c4c"
+    },
+    {
+      "path": "scripts/run_px4_in_plant.sh",
+      "sha256": "adefbea6bd29b4ad2d054c1c5bbbb01a78f20f0ea8210f3fce809fba7b61bd65"
+    },
+    {
+      "path": "scripts/sitl_gcs_heartbeat.py",
+      "sha256": "e778febec9bf0f73c1750f130ed04185cb4196d2c62e82531be8cf5aeebce9ca"
+    },
+    {
+      "path": "scripts/start_click_navigation.sh",
+      "sha256": "489298bcac52dc4cecab415adb3f16a871cd9d2fe6740916efa8ebc7528688f7"
+    },
+    {
+      "path": "scripts/start_click_navigation_both.sh",
+      "sha256": "841d577ec72dbbd1e18aa4991d7a0948ea15a6697ce346547cb569c601999ebc"
+    },
+    {
+      "path": "scripts/test_click_navigation_cancel_clock.py",
+      "sha256": "abb10286db63bbe5b40bd5fbf75100927db5421c9ede97ee9355540013768e89"
+    },
+    {
+      "path": "scripts/test_click_navigation_http.py",
+      "sha256": "9ddabd87e328038a23ad0e6d15673c438c36e786ab5d2d3b8e8067e885bd2e2a"
+    },
+    {
+      "path": "scripts/test_click_navigation_ros.py",
+      "sha256": "a6e1d6aeb01d7e250ef004c03ceaa151c6ca4e195433fbe625816a657e680808"
+    },
+    {
+      "path": "scripts/test_click_navigation_stale.py",
+      "sha256": "0aeacdb93fe5f7e8e4ea78ac55734d74c17e6136f57c00dcd94ecb3131c2ca84"
+    },
+    {
+      "path": "scripts/test_click_navigation_ui_fixture.py",
+      "sha256": "5527ef26d1d6c39091cd58294229bc8da4df9dee2ab708a0c3da115e51adbb9c"
+    },
+    {
+      "path": "scripts/test_click_navigation_watchdog.py",
+      "sha256": "aa8e3f8cc283054a3bd39550e7bfb9d9b842bce04b27f2b73c65e871f9ab13c4"
+    },
+    {
+      "path": "src/px4_msgs/.github/dependabot.yml",
+      "sha256": "eeef2a7ee7def3bfbdcb0018a831200f6999bd9b3d09b4131e2e479bd7ef337d"
+    },
+    {
+      "path": "src/px4_msgs/.github/workflows/build.yml",
+      "sha256": "d76a3aa2b1097910ca4ad3bff9ba03f1878827dfb83e15a31e740d9ffd3059dd"
+    },
+    {
+      "path": "src/px4_msgs/.gitignore",
+      "sha256": "cb8b09ca09d5435730a29c4a7362d0e7080318b9ffbac6377dedd4f4e14f7f15"
+    },
+    {
+      "path": "src/px4_msgs/CMakeLists.txt",
+      "sha256": "f02160dc0a6af7484ddc5a515852ba97e667431c2d5093f059172a052e25b95e"
+    },
+    {
+      "path": "src/px4_msgs/CONTRIBUTING.md",
+      "sha256": "826f63d9725975e17b01d8b37bb2ec20f454631df34c41718a2bd77bc7ef8453"
+    },
+    {
+      "path": "src/px4_msgs/LICENSE",
+      "sha256": "1757308f1a82f6203bc448a11462f22b8466b4bdd59bc3dce97f01a478cd4d2d"
+    },
+    {
+      "path": "src/px4_msgs/msg/ActionRequest.msg",
+      "sha256": "d699b8df02823202cf5268d8bb9dc7a1e9f02dca5b21be8d3fe8a418766bbc9b"
+    },
+    {
+      "path": "src/px4_msgs/msg/ActuatorArmed.msg",
+      "sha256": "a9cfd38bd9722ee3f34ba32587ac6542dd70f06a5eda7854f3685e7a6f5cf740"
+    },
+    {
+      "path": "src/px4_msgs/msg/ActuatorControlsStatus.msg",
+      "sha256": "7c684f2b96a2ca9b1cac6a05d46c57a3de3132ac9bb18ba5c54f5521ae55cb51"
+    },
+    {
+      "path": "src/px4_msgs/msg/ActuatorMotors.msg",
+      "sha256": "40d89fe296ce86b005ad67798b109c843698811dea3ed12d9662c9b8f032e386"
+    },
+    {
+      "path": "src/px4_msgs/msg/ActuatorOutputs.msg",
+      "sha256": "18baa5261a3bf906e65beee3470db943c8b7fb5aa36551ccc4ab6f732c6a2cdd"
+    },
+    {
+      "path": "src/px4_msgs/msg/ActuatorServos.msg",
+      "sha256": "6f3fe07cbcae4b472d50de20c6eec294313d64bd9113d02eb7b0d6597f18268b"
+    },
+    {
+      "path": "src/px4_msgs/msg/ActuatorServosTrim.msg",
+      "sha256": "98a7f8ac598ac450e13034b5c115164b72b5a1c9aedb383066e3a6a83f65d3a0"
+    },
+    {
+      "path": "src/px4_msgs/msg/ActuatorTest.msg",
+      "sha256": "1759911ec0e7754bf3e039a3853b4d5063fff46aea685901e2a4890547f1ff4a"
+    },
+    {
+      "path": "src/px4_msgs/msg/AdcReport.msg",
+      "sha256": "7e47c651d22e9927d8cfef3854c8dc2328be6fc9409122077e98678f3127b5c7"
+    },
+    {
+      "path": "src/px4_msgs/msg/Airspeed.msg",
+      "sha256": "8460604533d1e4fb8e634e794c6e2bef3ac7eecc3457155fb6cf8a1ef2c9bca4"
+    },
+    {
+      "path": "src/px4_msgs/msg/AirspeedValidated.msg",
+      "sha256": "dea52f9e970775dff9267c7a1e414609158846d9ac60422e15695ba36aee2bad"
+    },
+    {
+      "path": "src/px4_msgs/msg/AirspeedWind.msg",
+      "sha256": "f02678242b013e240c966a90655ae96b6f0c41c2a978a8bb0b6ba1462b39c3e7"
+    },
+    {
+      "path": "src/px4_msgs/msg/ArmingCheckReply.msg",
+      "sha256": "16c8da473dcc1fa42ca694bb51328363b7452b91286540405501a3ef85a4f133"
+    },
+    {
+      "path": "src/px4_msgs/msg/ArmingCheckRequest.msg",
+      "sha256": "f2ba8acc6a07454f63b4753b0611ae382eb7d59a04a689ecdba7a90191154cb2"
+    },
+    {
+      "path": "src/px4_msgs/msg/AutotuneAttitudeControlStatus.msg",
+      "sha256": "c7588037c321fc591cd69320b009d4e69cc6daa7540852b6ffb5c20d8a5b1d6c"
+    },
+    {
+      "path": "src/px4_msgs/msg/BatteryInfo.msg",
+      "sha256": "b1c52c993c5ced9d9852fcfdda2d44057da027b6e6e196c040797998085eb996"
+    },
+    {
+      "path": "src/px4_msgs/msg/BatteryStatus.msg",
+      "sha256": "53e19da508bd8ae64c1110a93b761735942697fd697a50bd2d6f34b041e211b5"
+    },
+    {
+      "path": "src/px4_msgs/msg/ButtonEvent.msg",
+      "sha256": "af7731b520e90ef85f2e6abac7f1951a6229678d5bd53211383381f23ef593de"
+    },
+    {
+      "path": "src/px4_msgs/msg/CameraCapture.msg",
+      "sha256": "b22a56db9adb1f82a04638909e537dbdfe383627e0d1ab6a86649e882f5474b4"
+    },
+    {
+      "path": "src/px4_msgs/msg/CameraStatus.msg",
+      "sha256": "95a5e6b83b5f908fca6c4424807f6336d9f458ff58e90425958fd98f5d494985"
+    },
+    {
+      "path": "src/px4_msgs/msg/CameraTrigger.msg",
+      "sha256": "93a0295badd0cb7ac1d8f1118cd6172facb52d6e785e0a6ab8c79c477c80c955"
+    },
+    {
+      "path": "src/px4_msgs/msg/CanInterfaceStatus.msg",
+      "sha256": "3043c2c27a215263e0dbdfcf05f08615121a94bbfb78acc548565b5ac1ee8d63"
+    },
+    {
+      "path": "src/px4_msgs/msg/CellularStatus.msg",
+      "sha256": "12ddc8bf3814dfe3425de02b8e0af803beb74164b99f359aa480e7cf3aad7449"
+    },
+    {
+      "path": "src/px4_msgs/msg/CollisionConstraints.msg",
+      "sha256": "8a615fea17e71dd4cd072decdd175096a13277bc57349be47f2cb9b9a24d987a"
+    },
+    {
+      "path": "src/px4_msgs/msg/ConfigOverrides.msg",
+      "sha256": "60d348cd031289589925a07eb0a1235fbda568de65c6d0581f79c742b56aadf7"
+    },
+    {
+      "path": "src/px4_msgs/msg/ControlAllocatorStatus.msg",
+      "sha256": "77b30bb94702b41ee3ea890541b7dc354e878455d559120905a2463ab3d327a4"
+    },
+    {
+      "path": "src/px4_msgs/msg/Cpuload.msg",
+      "sha256": "d0f217ca2f7afcb378772cb5b3fce496587889b609ac0b3df935c8c13280c268"
+    },
+    {
+      "path": "src/px4_msgs/msg/DatamanRequest.msg",
+      "sha256": "73486d981749affc085330b6151ff8e0c7a922be5db2f57b60024afcd6827e17"
+    },
+    {
+      "path": "src/px4_msgs/msg/DatamanResponse.msg",
+      "sha256": "e3f4a644386e556d7cf2b9074fff7ea2f9ea85d07bb72365b5b31ba82ff18511"
+    },
+    {
+      "path": "src/px4_msgs/msg/DebugArray.msg",
+      "sha256": "47bcbb7e3710544bf5e18bacdd8755c9d630676e32d03b3d7406b8212c55e5a1"
+    },
+    {
+      "path": "src/px4_msgs/msg/DebugKeyValue.msg",
+      "sha256": "4bd455d2a14f90bf0544ac487eeb456e4540073f4b07a0f67add32a7686a2a68"
+    },
+    {
+      "path": "src/px4_msgs/msg/DebugValue.msg",
+      "sha256": "c6e0b7362780775566f437feeaba01c3f6dbd509a36ec6250080ed051e32f0ed"
+    },
+    {
+      "path": "src/px4_msgs/msg/DebugVect.msg",
+      "sha256": "7d1cec795879aac4111353732e6140604204343b4fcc96029c9fa1ebe2903339"
+    },
+    {
+      "path": "src/px4_msgs/msg/DifferentialPressure.msg",
+      "sha256": "5290da3f825a8dcb0c1f023acc5e830a3d9dc784ae36ac7998b5ddaa74ae745b"
+    },
+    {
+      "path": "src/px4_msgs/msg/DistanceSensor.msg",
+      "sha256": "4d50a87a77bdf3de8b2487b250f5872c5527e08117c2aa50122c158c8d101263"
+    },
+    {
+      "path": "src/px4_msgs/msg/DistanceSensorModeChangeRequest.msg",
+      "sha256": "ebd5026fa37843bc7e7400247a69dc1288fca536a63abc9189cdb82ad80faae7"
+    },
+    {
+      "path": "src/px4_msgs/msg/DronecanNodeStatus.msg",
+      "sha256": "be43064709ff4f95f3a19c833ab8212d2fbcf0db1dafd0e3a7c73bbc6a742760"
+    },
+    {
+      "path": "src/px4_msgs/msg/Ekf2Timestamps.msg",
+      "sha256": "a8124acce4d9c148d67a9d1875f824b119b4fe7910e08064b72bf5d88d92495e"
+    },
+    {
+      "path": "src/px4_msgs/msg/EscReport.msg",
+      "sha256": "f2300d7270d11fe530748fdf9a7e16093be9620f9c6809f546f20d2aea20084d"
+    },
+    {
+      "path": "src/px4_msgs/msg/EscStatus.msg",
+      "sha256": "7c1d9298d6b8cc5e90a98fc4d2093165270c413ded649115c60fb9851ef89f7b"
+    },
+    {
+      "path": "src/px4_msgs/msg/EstimatorAidSource1d.msg",
+      "sha256": "de37c10bf282c9d844d984e8a9a73536dd9e9e3c7b46e7bb9ef0fcf18c9149ee"
+    },
+    {
+      "path": "src/px4_msgs/msg/EstimatorAidSource2d.msg",
+      "sha256": "6f79a92ef4009a5a5a82834033baafd8ddd724512bcb069607ab0ca286a002ae"
+    },
+    {
+      "path": "src/px4_msgs/msg/EstimatorAidSource3d.msg",
+      "sha256": "aca94730f9da756cae40f45b517c37fc76312231b8cb5e343bab2cbe18322e5c"
+    },
+    {
+      "path": "src/px4_msgs/msg/EstimatorBias.msg",
+      "sha256": "19c7042e2284276bb0d05e3211d0ec78e7f8579f5098c21dc8046d4735301d86"
+    },
+    {
+      "path": "src/px4_msgs/msg/EstimatorBias3d.msg",
+      "sha256": "c27f9c8211e84bd2738f6dc98e346879dab0ebbad4accd5b2d5819f5941b269c"
+    },
+    {
+      "path": "src/px4_msgs/msg/EstimatorEventFlags.msg",
+      "sha256": "7abe754c8530fe1be7aef425716df82b983946cfe81f92a09973ea0e8e9c8b78"
+    },
+    {
+      "path": "src/px4_msgs/msg/EstimatorGpsStatus.msg",
+      "sha256": "7af18ed29ccbb4f77d8ea945001f78f9ed0b1caa726425030194a405f40e1d57"
+    },
+    {
+      "path": "src/px4_msgs/msg/EstimatorInnovations.msg",
+      "sha256": "b5af30a8eaabc1b0a1307026a3a993290e6c451808bf049148ddcf2be1216fc3"
+    },
+    {
+      "path": "src/px4_msgs/msg/EstimatorSelectorStatus.msg",
+      "sha256": "5dffef3f03f0085a53a263095cda303b73098537413d5d3f2aef725307c368ed"
+    },
+    {
+      "path": "src/px4_msgs/msg/EstimatorSensorBias.msg",
+      "sha256": "156825ca89c9f241aff8a9ca01100c9f837be4c2183fc7c156fc2037e021020f"
+    },
+    {
+      "path": "src/px4_msgs/msg/EstimatorStates.msg",
+      "sha256": "cc17e503d46578a275e1248e92490e431a94ecd8bc32fd807c239a4e1d5f1780"
+    },
+    {
+      "path": "src/px4_msgs/msg/EstimatorStatus.msg",
+      "sha256": "44cba4424c224753b8249729e9bf7e530d0b34e04d5299fcf94f2677c8f50bd5"
+    },
+    {
+      "path": "src/px4_msgs/msg/EstimatorStatusFlags.msg",
+      "sha256": "dbe714087ebd463317f51bf53a392d5a41f9f5d3524a1e080eda2649980f642b"
+    },
+    {
+      "path": "src/px4_msgs/msg/Event.msg",
+      "sha256": "c7296689f312adc27621fe2d97c6724b639e9876c07291ed20531a167711d9fc"
+    },
+    {
+      "path": "src/px4_msgs/msg/FailsafeFlags.msg",
+      "sha256": "a66d4480ea296ba4bdbb58e6d596b3a5fe62bf105fd207faf63dce3b93915551"
+    },
+    {
+      "path": "src/px4_msgs/msg/FailureDetectorStatus.msg",
+      "sha256": "602b8a939e663660c04edbac9fb87826b8a01d986d284702d500c0d07d8dc9f9"
+    },
+    {
+      "path": "src/px4_msgs/msg/FigureEightStatus.msg",
+      "sha256": "2e682130c200b7847d69163778394031af1dda0f1cc53db2218f9ea164be0d1f"
+    },
+    {
+      "path": "src/px4_msgs/msg/FixedWingLateralGuidanceStatus.msg",
+      "sha256": "275d30ed117a15289ad920e1034625084e5acfdcafb592e148962f8ccec6273a"
+    },
+    {
+      "path": "src/px4_msgs/msg/FixedWingLateralSetpoint.msg",
+      "sha256": "1e0f10699ee1760bb01b6c6f2dfe19b41ef93cfbabebc6646cf4dae6e66116be"
+    },
+    {
+      "path": "src/px4_msgs/msg/FixedWingLateralStatus.msg",
+      "sha256": "df8b223e5ee116fcf68639398439171ce3f6d70b16ef87f9e7cef194fd1e11f4"
+    },
+    {
+      "path": "src/px4_msgs/msg/FixedWingLongitudinalSetpoint.msg",
+      "sha256": "42f6f5f54bacb1d3fc3107419cffc591ebe75da8e684bd77006cc9a04e7a50bb"
+    },
+    {
+      "path": "src/px4_msgs/msg/FixedWingRunwayControl.msg",
+      "sha256": "80d5b8f3b2e97808cac29bc9fefc60b72f2f70b40712d2cee35e0b47c0d47e5a"
+    },
+    {
+      "path": "src/px4_msgs/msg/FlightPhaseEstimation.msg",
+      "sha256": "0319f1da07969ccbfa14c47c5874747454c6b3c1c10e7c0bb15f1e7dd6ed894a"
+    },
+    {
+      "path": "src/px4_msgs/msg/FollowTarget.msg",
+      "sha256": "a7b059497d113533dbb3f296e5cc817faf94f69237b1564e00e125a0698306d5"
+    },
+    {
+      "path": "src/px4_msgs/msg/FollowTargetEstimator.msg",
+      "sha256": "96109ae9fad3f6ef144fd5a96d7f04a91a9cb912fed3159443209842c663ca6f"
+    },
+    {
+      "path": "src/px4_msgs/msg/FollowTargetStatus.msg",
+      "sha256": "46e444c3fb16158ab5765244980f11a014589a9433d7af583c6be62de2eeb7ee"
+    },
+    {
+      "path": "src/px4_msgs/msg/FuelTankStatus.msg",
+      "sha256": "bae1a8207241ef7113753f830d50cec526defe05acf45469d37fdea8ddefb454"
+    },
+    {
+      "path": "src/px4_msgs/msg/GeneratorStatus.msg",
+      "sha256": "b8c6cd745e80d2756c488f6f184140a0dd10d17a84c06a8aa92c36704dd353b1"
+    },
+    {
+      "path": "src/px4_msgs/msg/GeofenceResult.msg",
+      "sha256": "dbde76c6802b4f3388a7094534249c40ab18059bd206aff90ab4f4adfb284250"
+    },
+    {
+      "path": "src/px4_msgs/msg/GeofenceStatus.msg",
+      "sha256": "2a5583e3b2e4ebec0f1266c062c6e5619ff5ba8ca8bb25f7f2ad075c9ec40aa1"
+    },
+    {
+      "path": "src/px4_msgs/msg/GimbalControls.msg",
+      "sha256": "18509af0c2a8ad5cb8b719dff5f642b19ce4c563c0a21729e279af74fbe3b20b"
+    },
+    {
+      "path": "src/px4_msgs/msg/GimbalDeviceAttitudeStatus.msg",
+      "sha256": "917fddd55bf0babd4f6dbb5ec36a575e928094280577a092d4cfde91dfe621b0"
+    },
+    {
+      "path": "src/px4_msgs/msg/GimbalDeviceInformation.msg",
+      "sha256": "f61e07cde2c46ec32860ece23eb6cc09ec4e8da6d843b669cf4ac974116f5519"
+    },
+    {
+      "path": "src/px4_msgs/msg/GimbalDeviceSetAttitude.msg",
+      "sha256": "26643dad664d65073439d9ac8242ea771753f9b75651bbd20758a412e361d614"
+    },
+    {
+      "path": "src/px4_msgs/msg/GimbalManagerInformation.msg",
+      "sha256": "5e7060603eef3cbf0142bd1eabb3faac177f28bf9b791d8dd1a365ef8fadca20"
+    },
+    {
+      "path": "src/px4_msgs/msg/GimbalManagerSetAttitude.msg",
+      "sha256": "a8d6889feae8c894c58748ac80219837b5b6a7d545c9c22dde5aad62325be845"
+    },
+    {
+      "path": "src/px4_msgs/msg/GimbalManagerSetManualControl.msg",
+      "sha256": "df8ec27b4c73a2bb9e8a55568bcc398416f8d50c48d4c6a703b68b787c67c33e"
+    },
+    {
+      "path": "src/px4_msgs/msg/GimbalManagerStatus.msg",
+      "sha256": "791e4147199ad075a63fdd931b96959add789c9c76d8ba07ffd7cfc48c067d01"
+    },
+    {
+      "path": "src/px4_msgs/msg/GotoSetpoint.msg",
+      "sha256": "0dee6489a796cd397f745a0ede89d06aaf0e42e6b4fe2ad89fbbfe090124bc3b"
+    },
+    {
+      "path": "src/px4_msgs/msg/GpioConfig.msg",
+      "sha256": "29d4cb814ae8a793782a2fa21b330264a537e0c3305e737ae2690327ab54f779"
+    },
+    {
+      "path": "src/px4_msgs/msg/GpioIn.msg",
+      "sha256": "21125aa377500a24f052af49213eb9390b3c4d7334f932bae2823a29c485c89e"
+    },
+    {
+      "path": "src/px4_msgs/msg/GpioOut.msg",
+      "sha256": "0cdb3e27cf4dc0fc03afbdd4af8b270dcb936505a1b8ed378d68e78046f77b01"
+    },
+    {
+      "path": "src/px4_msgs/msg/GpioRequest.msg",
+      "sha256": "aed7f3625b4a36c3d400aeb625f74ebf598f1531f58aba26422779a18964d150"
+    },
+    {
+      "path": "src/px4_msgs/msg/GpsDump.msg",
+      "sha256": "754ae04822e2bbde1c6d1efc1ac47f532465c2c3775bfc2c0bf670bdb6061b76"
+    },
+    {
+      "path": "src/px4_msgs/msg/GpsInjectData.msg",
+      "sha256": "7b151f2d22056117c9dfe5e3c75b6f0cbc0434344aed4d6ab540e9ac43b6d347"
+    },
+    {
+      "path": "src/px4_msgs/msg/Gripper.msg",
+      "sha256": "c77eb323885ac841927bde13d6086dfa39b33d2b2c1fa44bd73815898dcb1805"
+    },
+    {
+      "path": "src/px4_msgs/msg/HealthReport.msg",
+      "sha256": "b7b435ea2ab1ca656e79ea4e000ac3a2873dc2a7e8c1ba4f823509891ece8290"
+    },
+    {
+      "path": "src/px4_msgs/msg/HeaterStatus.msg",
+      "sha256": "492abb629fe52db6d9fad41dbcfe83fbf075e7b81b65463858aec06605d71a18"
+    },
+    {
+      "path": "src/px4_msgs/msg/HomePosition.msg",
+      "sha256": "6fcc4d8730bb216d4beea7b4b0e30ee5a7a5bba0fad003ccf46e7648bb8880c6"
+    },
+    {
+      "path": "src/px4_msgs/msg/HoverThrustEstimate.msg",
+      "sha256": "8a4a4390198fb4a0d36fefe571233cb452cec387168d3fea6cc761b5857d1f89"
+    },
+    {
+      "path": "src/px4_msgs/msg/InputRc.msg",
+      "sha256": "f6c989db604fc028395556cb722463c2739204c3ec07870c9b6e422d3573b8aa"
+    },
+    {
+      "path": "src/px4_msgs/msg/InternalCombustionEngineControl.msg",
+      "sha256": "7f603ac3642185dafe7b766662d57287407cc724f84849d2edbd27012b00f7e5"
+    },
+    {
+      "path": "src/px4_msgs/msg/InternalCombustionEngineStatus.msg",
+      "sha256": "f13d59567feca2c98e13e0866ba80a63ad371aec44f3fee0a9d6a09320957742"
+    },
+    {
+      "path": "src/px4_msgs/msg/IridiumsbdStatus.msg",
+      "sha256": "6c0e47c1d4a6c5a09f042269f2d36e3d69608977b432325dd33ddc01a4554b89"
+    },
+    {
+      "path": "src/px4_msgs/msg/IrlockReport.msg",
+      "sha256": "63fa6bbc991e188548ff432a9553f2dcbaba06a50c0bdaaad023974a4f7b9878"
+    },
+    {
+      "path": "src/px4_msgs/msg/LandingGear.msg",
+      "sha256": "935cc0bbaeea7205b6f2187808e9812ae2b3385e8ad680c17a17fceef4afc67b"
+    },
+    {
+      "path": "src/px4_msgs/msg/LandingGearWheel.msg",
+      "sha256": "b6308fc837587e617fd08594c022c99eb5bfbec99c62e0163239d0abcfd12915"
+    },
+    {
+      "path": "src/px4_msgs/msg/LandingTargetInnovations.msg",
+      "sha256": "a1602faf1275133ad282e2da6af6424f77dc3134f2f4fb9748293ee302f157e0"
+    },
+    {
+      "path": "src/px4_msgs/msg/LandingTargetPose.msg",
+      "sha256": "d6d9d634762dfefc54b0e01ed7698d5a249fabe10c4917aa99909c9b1769be1a"
+    },
+    {
+      "path": "src/px4_msgs/msg/LateralControlConfiguration.msg",
+      "sha256": "2b43981b39f35f46a70032243da5bafc03e3a3abf3192a2b412301837c739667"
+    },
+    {
+      "path": "src/px4_msgs/msg/LaunchDetectionStatus.msg",
+      "sha256": "c9552ba951df3cfaee98ba8886377b50b990b5c775e16a85a9c5cb63ad4e0387"
+    },
+    {
+      "path": "src/px4_msgs/msg/LedControl.msg",
+      "sha256": "aa9a6cce4e50199bc4c61555b98f7b2fdfd6fb3bfa35f07f197e8aa6cd9dde4d"
+    },
+    {
+      "path": "src/px4_msgs/msg/LoggerStatus.msg",
+      "sha256": "506671a58a4def87c8f5ccc9f808faf8d11a17e238caa7cec102a0cc78df2e8f"
+    },
+    {
+      "path": "src/px4_msgs/msg/LogMessage.msg",
+      "sha256": "b522d5182f3d07795a61212abc3b15c5bb2333dc18f85c5ccf94df010b8fc3fe"
+    },
+    {
+      "path": "src/px4_msgs/msg/LongitudinalControlConfiguration.msg",
+      "sha256": "b842542412d2df19c24bdb9b208a7d767fada4fa2dcc8b7a62184b250d1d6845"
+    },
+    {
+      "path": "src/px4_msgs/msg/MagnetometerBiasEstimate.msg",
+      "sha256": "10d58919c4618b3b86eb5503a4803515a7b074975453c74ef0694ea3a304cae6"
+    },
+    {
+      "path": "src/px4_msgs/msg/MagWorkerData.msg",
+      "sha256": "fdf9c41a3db8b8e3eb43556067b14b4203a24d159fe763894aa727f50c0de28d"
+    },
+    {
+      "path": "src/px4_msgs/msg/ManualControlSetpoint.msg",
+      "sha256": "73a320c1957efeba07914dc54695e1f20d874b577e7eed430d7d2ff04ae1e950"
+    },
+    {
+      "path": "src/px4_msgs/msg/ManualControlSwitches.msg",
+      "sha256": "93aa003f1a6b937ec1d846804cce2c6e494e16d8c71cb2b1bcab1aa8d720454b"
+    },
+    {
+      "path": "src/px4_msgs/msg/MavlinkLog.msg",
+      "sha256": "a555166dcb9573ff553ab8937c1fc96635424c19231a95c9bd9de8bb02df1722"
+    },
+    {
+      "path": "src/px4_msgs/msg/MavlinkTunnel.msg",
+      "sha256": "8c44046926297f4dbc032d323708622c6bebf627a905e52ea266fb3232358148"
+    },
+    {
+      "path": "src/px4_msgs/msg/MessageFormatRequest.msg",
+      "sha256": "d529205eeaa021dd59fc75f3c2b3ab97f972f5ea95587cd18633d85f4ca957d8"
+    },
+    {
+      "path": "src/px4_msgs/msg/MessageFormatResponse.msg",
+      "sha256": "0a8350e515194727ac46d82e637a965a80a458c082afa65b6775af479540996e"
+    },
+    {
+      "path": "src/px4_msgs/msg/Mission.msg",
+      "sha256": "dac49ab119b247c6f24d31806c0f456cd993265005ede79d74e0b94a24dea57a"
+    },
+    {
+      "path": "src/px4_msgs/msg/MissionResult.msg",
+      "sha256": "a67f9f881bcf3a69e2de3af5f3b130abc721cc468e834d2f2073b475c88b6254"
+    },
+    {
+      "path": "src/px4_msgs/msg/ModeCompleted.msg",
+      "sha256": "b5b889f1a54e4f66d3c7c42847adcf68b26491ddf528fb47e4daea4440ff1eeb"
+    },
+    {
+      "path": "src/px4_msgs/msg/MountOrientation.msg",
+      "sha256": "b9c2a30fc5d5f91b3b9ebf25edf08d3bfda2dd31cf5ff8fbd2076497002aa27b"
+    },
+    {
+      "path": "src/px4_msgs/msg/NavigatorMissionItem.msg",
+      "sha256": "70935ff0fa0b21f9b61e3b48b690a27d2026e4c803b2964600b74b81446f2fbe"
+    },
+    {
+      "path": "src/px4_msgs/msg/NavigatorStatus.msg",
+      "sha256": "e018b1754e391a965a8d1d848654acc7f1b42b07df4b566ee79fde6f206812bb"
+    },
+    {
+      "path": "src/px4_msgs/msg/NeuralControl.msg",
+      "sha256": "b66b7cc9a4a25d7c9be24ee11bcc1c1d22c19c87a0180af7490f2e40ecd80d97"
+    },
+    {
+      "path": "src/px4_msgs/msg/NormalizedUnsignedSetpoint.msg",
+      "sha256": "4cf57f7eab0d9f4c8f09ca75764a6c44a629c8c7bfc8b64481f489d524ecdb11"
+    },
+    {
+      "path": "src/px4_msgs/msg/ObstacleDistance.msg",
+      "sha256": "25d0af337b37f9e5389c0faf254c8d1842b04453455989bd122b09a39ec424de"
+    },
+    {
+      "path": "src/px4_msgs/msg/OffboardControlMode.msg",
+      "sha256": "8bd6fa373300e5bd35ade9d34ba0e1f470b880bf5d5b2f5c9316957bbe2a40e7"
+    },
+    {
+      "path": "src/px4_msgs/msg/OnboardComputerStatus.msg",
+      "sha256": "4a7142a74719b1b56bdbac153e26c91bb3244a0febcac8869203576bae242998"
+    },
+    {
+      "path": "src/px4_msgs/msg/OpenDroneIdArmStatus.msg",
+      "sha256": "362cc20941b1357540d6eb5fe342ed20f2ddbd5e2d27eaab20e74f02301fa9f2"
+    },
+    {
+      "path": "src/px4_msgs/msg/OpenDroneIdOperatorId.msg",
+      "sha256": "3a3f2070ee2ac510304311d92da9e5a3b42aae9349e97f322654feb8b36b0d13"
+    },
+    {
+      "path": "src/px4_msgs/msg/OpenDroneIdSelfId.msg",
+      "sha256": "984db79933a0154f8e9d8730e8be5a24b34a79d43b93c935e3fe15863bc545bb"
+    },
+    {
+      "path": "src/px4_msgs/msg/OpenDroneIdSystem.msg",
+      "sha256": "42deeac881dc6e8cdc22fa6a1ded0074027f68c46abd32e32c92efe894aafaed"
+    },
+    {
+      "path": "src/px4_msgs/msg/OrbitStatus.msg",
+      "sha256": "992e24034e734bb2e8bcf5bf4146703d765ebebaa0405c57ce716270dfcda143"
+    },
+    {
+      "path": "src/px4_msgs/msg/OrbTest.msg",
+      "sha256": "eede789e0e1341e13031863974605d186fb094e6f9ced4fcc41dade0f7371f64"
+    },
+    {
+      "path": "src/px4_msgs/msg/OrbTestLarge.msg",
+      "sha256": "881e2bd7bc5a5291bc7297e3b9fa37a984b0b581f2b804aafb0e80c8eccb7d4a"
+    },
+    {
+      "path": "src/px4_msgs/msg/OrbTestMedium.msg",
+      "sha256": "9e507d435a81e4310a043b54d73ade15b2826dc8d16006931431f0641e2a1a58"
+    },
+    {
+      "path": "src/px4_msgs/msg/ParameterResetRequest.msg",
+      "sha256": "d57eae2bbfba919a0f07bd0e87b5e76686ef43c8d61cb70b0391853d90f46540"
+    },
+    {
+      "path": "src/px4_msgs/msg/ParameterSetUsedRequest.msg",
+      "sha256": "d72c332af343dad3ab2b5fbdc712a9f53da90eb08fac9841061b67a655241ee0"
+    },
+    {
+      "path": "src/px4_msgs/msg/ParameterSetValueRequest.msg",
+      "sha256": "ff054adb695c5ff7a680ecda38355f440d541144a95646bf4d94f39cf429dfd4"
+    },
+    {
+      "path": "src/px4_msgs/msg/ParameterSetValueResponse.msg",
+      "sha256": "96ee73a98916bdca14d2509a83127c71fb7197e74e91ad301c74be875259198b"
+    },
+    {
+      "path": "src/px4_msgs/msg/ParameterUpdate.msg",
+      "sha256": "c0b62a2939caf52f20bbb53aaa1b6118dfeed1475cc7552fc3cc3a8e835585f5"
+    },
+    {
+      "path": "src/px4_msgs/msg/Ping.msg",
+      "sha256": "a62ee003c961b4ccc2389b455b629c6ab9544cc0c618c4b39951ac891a78040a"
+    },
+    {
+      "path": "src/px4_msgs/msg/PositionControllerLandingStatus.msg",
+      "sha256": "352afe2252c0c08bf31a9abdef42817be7be797d065d5ef363f7e69d4c064dc7"
+    },
+    {
+      "path": "src/px4_msgs/msg/PositionControllerStatus.msg",
+      "sha256": "c0ee08097ec7ee6e473d9d9b2f7d461cbf7b7b3b67afc53aa85cac356d990fd4"
+    },
+    {
+      "path": "src/px4_msgs/msg/PositionSetpoint.msg",
+      "sha256": "38b2b9182936ba789a223ac9be5576f721e87329c45c62fb246975a6bc2d18cf"
+    },
+    {
+      "path": "src/px4_msgs/msg/PositionSetpointTriplet.msg",
+      "sha256": "f41f65ef32dccae829c4b02ec3d5596540ad39692d43ed2d72f648b0cb4cadc0"
+    },
+    {
+      "path": "src/px4_msgs/msg/PowerButtonState.msg",
+      "sha256": "867ceab681b64079356f435676bd74ede6354a6c3d9fe65cf7ca89bae8442d97"
+    },
+    {
+      "path": "src/px4_msgs/msg/PowerMonitor.msg",
+      "sha256": "3a04f180dbbeac92b32ee4e57653da39a30a0c60d25c03491b742c2940908c8c"
+    },
+    {
+      "path": "src/px4_msgs/msg/PpsCapture.msg",
+      "sha256": "d859756b3ec1765e1704cc64e59043497a53afc8c0936fb91e69567ac4cc3948"
+    },
+    {
+      "path": "src/px4_msgs/msg/PurePursuitStatus.msg",
+      "sha256": "86dcc0945b675fba42f665fe9aa9be5592e6b437cde921f6bda700be1e558d78"
+    },
+    {
+      "path": "src/px4_msgs/msg/PwmInput.msg",
+      "sha256": "0817f29b8638fde4c52ee76f544d942cb004d4088461df7c88592a77fce4971d"
+    },
+    {
+      "path": "src/px4_msgs/msg/Px4ioStatus.msg",
+      "sha256": "aeb9a30a83c2e25c6c16e11f90eb3294878c18dd913175c1163dc4dd8fc0d40c"
+    },
+    {
+      "path": "src/px4_msgs/msg/QshellReq.msg",
+      "sha256": "ab7890cf15bc4acc56a90061ce8bebce34d5b23a65e2324ba7ef8d1019dd6b6a"
+    },
+    {
+      "path": "src/px4_msgs/msg/QshellRetval.msg",
+      "sha256": "3741998b0e2136a2fb413b8a3fbf372ac58fc96050dcc7412a457f68f54f8aa7"
+    },
+    {
+      "path": "src/px4_msgs/msg/RadioStatus.msg",
+      "sha256": "a4daca29400caef72645d42202e9944939e1fa0b8993340d5fc33fb7bcd3c3f2"
+    },
+    {
+      "path": "src/px4_msgs/msg/RateCtrlStatus.msg",
+      "sha256": "062eaa40fa8b0feaaf76e2d8410a64208d9998709070da9df507cf890d620ea7"
+    },
+    {
+      "path": "src/px4_msgs/msg/RcChannels.msg",
+      "sha256": "89bb38c4d7511a6cdd2d15368e0ba33d7550be1f067b87196ddcccce9c44668b"
+    },
+    {
+      "path": "src/px4_msgs/msg/RcParameterMap.msg",
+      "sha256": "2c26d0b03569e03c5627dad38dfd2846ec891f94b1c9b37562c7125d71fb1aa0"
+    },
+    {
+      "path": "src/px4_msgs/msg/RegisterExtComponentReply.msg",
+      "sha256": "e592fcf3cf37610d52ec5a43a91291dbd4217b6892023f1c98401403a4cd7687"
+    },
+    {
+      "path": "src/px4_msgs/msg/RegisterExtComponentRequest.msg",
+      "sha256": "fac8344370b1a34c56a6d25fa5cf8688cde83dc306fc2f09bc9a56ae090c4c8e"
+    },
+    {
+      "path": "src/px4_msgs/msg/RoverAttitudeSetpoint.msg",
+      "sha256": "b67b024eefa29e13312d53ee7214190e3b39ecae00a182ee4f5e6830d1d10bba"
+    },
+    {
+      "path": "src/px4_msgs/msg/RoverAttitudeStatus.msg",
+      "sha256": "2b5383d68e09ebc5e5e6c910072c2c9d004c6b27e7353ef97c925ff04e04d17a"
+    },
+    {
+      "path": "src/px4_msgs/msg/RoverPositionSetpoint.msg",
+      "sha256": "918cf4d0a8f583313f9d7ec76f6d003ce4ee96bf6837c58b2190797c7e440e43"
+    },
+    {
+      "path": "src/px4_msgs/msg/RoverRateSetpoint.msg",
+      "sha256": "4f929c0e3367f6c157f38524d0edcc59f0576a7b5d9ef4040ddf7aa6d0e93827"
+    },
+    {
+      "path": "src/px4_msgs/msg/RoverRateStatus.msg",
+      "sha256": "fb800e2cfa6fbb61a24c42af332303cba23689c70d32457d898c8ce7481496a6"
+    },
+    {
+      "path": "src/px4_msgs/msg/RoverSpeedSetpoint.msg",
+      "sha256": "adaab97d9a941f5b46baaf76fc759aa852a7143ed5d2114494f61b2474c3a3b3"
+    },
+    {
+      "path": "src/px4_msgs/msg/RoverSpeedStatus.msg",
+      "sha256": "f7dbf141f13722e5e77fc507221cfb5cbc2f4437d96877cefc2255218280158c"
+    },
+    {
+      "path": "src/px4_msgs/msg/RoverSteeringSetpoint.msg",
+      "sha256": "d3fb931d518a14d278a494b87d2dc7c5ce911c95c126e9481ddac8692409fa09"
+    },
+    {
+      "path": "src/px4_msgs/msg/RoverThrottleSetpoint.msg",
+      "sha256": "f753124cb8c56bc270c0c598eb17f005c08fd25f424bb501d22f07b9728da5b1"
+    },
+    {
+      "path": "src/px4_msgs/msg/Rpm.msg",
+      "sha256": "26d304984ad5b90ef07d14fc3a1978d2c3c72aaa25194af3474ac3fd0ad339f4"
+    },
+    {
+      "path": "src/px4_msgs/msg/RtlStatus.msg",
+      "sha256": "1ad89b27e37fa729da24378cbb9fbf0f5ff93e4f9154a3c979ba87277e744d6f"
+    },
+    {
+      "path": "src/px4_msgs/msg/RtlTimeEstimate.msg",
+      "sha256": "bc0f088a20db51bf190830727b4a620b8dc5e44a913afed0f469d81e86baeb96"
+    },
+    {
+      "path": "src/px4_msgs/msg/SatelliteInfo.msg",
+      "sha256": "6bca084e32136ee28326d2a6e870791442602e497d55cedce134bfd6d9509eed"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorAccel.msg",
+      "sha256": "2bd894577cc016f0d2bf022f708125fa2ca61b45c8e29377007f3615db4f58e2"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorAccelFifo.msg",
+      "sha256": "44612630a55b0ad4c1ec940e52e0ea95c298b0110930a8ce13cd520636815be0"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorAirflow.msg",
+      "sha256": "9581ccac1dc03157a9087e12b6052210b7f945bdc2d54f6689df2e0976170a97"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorBaro.msg",
+      "sha256": "f2629aa6a4bc54e8d8f19a1cd212e6f8864cffaa7f2cfa33d3e2f44951b65b06"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorCombined.msg",
+      "sha256": "ccac9a26fcf460228fe55459fe6710eb2e608665ff13141676805e98cbd5e462"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorCorrection.msg",
+      "sha256": "ca2eeaf165e57cab1cf7f0df46ca295ac6c41d1a8e72e737439c7fe2e88a87fc"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorGnssRelative.msg",
+      "sha256": "cee641875e365a9dab105a18cd77687df8bcbdf0e049513a100ff2d3ee0b410c"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorGnssStatus.msg",
+      "sha256": "5d3bb26befc3d0d7b15a3af0377e99f62fde226f35e37b44fb59db2b7116b4af"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorGps.msg",
+      "sha256": "d97c8eb596f2f4f5a79da30d868e1318d36491f032086339aa5bedd103d97b07"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorGyro.msg",
+      "sha256": "03771583b942c4755e4ed102601b0246ac3ccdacba3bfd6cd1175680e2df0e69"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorGyroFft.msg",
+      "sha256": "6559e37c33084f71fda2aa02bde38ac1ab1d2dd7d8fff48778cf8b406f507601"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorGyroFifo.msg",
+      "sha256": "9a779336d42d6399c8d77c26542017e8f6b61e44fb630f00d64e177d84ca57bc"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorHygrometer.msg",
+      "sha256": "af21bb5fa17efcb2f6e47c16cca92090af84dfd1eb157f66f8eafa94bf76f88a"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorMag.msg",
+      "sha256": "98ab9ac12e0557fabafa6708070f1bd152c9e8f8db6c9ba54b54949197344cd0"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorOpticalFlow.msg",
+      "sha256": "d72384ecf3f4c0aa79e8d67cfe503a4759cd1fbc9cb9605a08edc12a1fb57824"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorPreflightMag.msg",
+      "sha256": "71c3a4c2e499697093eb1723e9e87caa9489d5b241eab70418c9d19e60a51deb"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorSelection.msg",
+      "sha256": "655c7c89ad8a40eb4e04f059aeb92d639f6801982bee6e238347b90d444394c3"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorsStatus.msg",
+      "sha256": "1b752212b1691e7e46942d579a269db84ca1ae0fdda3f655981964d2661a353b"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorsStatusImu.msg",
+      "sha256": "942584728e9352c90e54ba4b8243b968f3c02a0b64133d96181d427c79c9c3f6"
+    },
+    {
+      "path": "src/px4_msgs/msg/SensorUwb.msg",
+      "sha256": "c5f5ad86e97d5ada515d0032742340493b34e17f9ce9d1f84e5dfa0038896a87"
+    },
+    {
+      "path": "src/px4_msgs/msg/SystemPower.msg",
+      "sha256": "f27a65fb800e4e2dbcd959239c94692a129af2ec459ceeac3d92c12b3f8aba03"
+    },
+    {
+      "path": "src/px4_msgs/msg/TakeoffStatus.msg",
+      "sha256": "0423eea2949999c32954bc03b750b013ba1d697d99878a78570cf6fe076c576c"
+    },
+    {
+      "path": "src/px4_msgs/msg/TaskStackInfo.msg",
+      "sha256": "7135b46beae67e62dce06e49d7b74cb3a8439eb0b23e71a7a3d4f34edcc36eda"
+    },
+    {
+      "path": "src/px4_msgs/msg/TecsStatus.msg",
+      "sha256": "47e6ef1448b98b6036856bb78e3d6b33ea4c59cb3c70d63f15822a6f98b7bd7d"
+    },
+    {
+      "path": "src/px4_msgs/msg/TelemetryStatus.msg",
+      "sha256": "2075bd7cf484dba5375464e6ca5c820bc982d34e30d2ff8fa382e748726ecda4"
+    },
+    {
+      "path": "src/px4_msgs/msg/TiltrotorExtraControls.msg",
+      "sha256": "9f7c2b193705481f70d0e8534b5e64adac1506688237dcb3f871151757673903"
+    },
+    {
+      "path": "src/px4_msgs/msg/TimesyncStatus.msg",
+      "sha256": "244e915343f678a7a9895002d2f36983bfd4494a2a9167db70b01e2dc5a5566c"
+    },
+    {
+      "path": "src/px4_msgs/msg/TrajectorySetpoint.msg",
+      "sha256": "d5671f1a094a9183e2337171ab738ae3395442e024b58aaacbf51c2b0188d5e2"
+    },
+    {
+      "path": "src/px4_msgs/msg/TrajectorySetpoint6dof.msg",
+      "sha256": "67aad281f2a2bfe0ef9a1e6ae6b0ae145ef3c3b16d1a7ae77370f2aaac1ec08d"
+    },
+    {
+      "path": "src/px4_msgs/msg/TransponderReport.msg",
+      "sha256": "fb98a40bec71d1f79e959686f02de2cbfb425f16104194a85b2b1584970c063e"
+    },
+    {
+      "path": "src/px4_msgs/msg/TuneControl.msg",
+      "sha256": "708822a89e2e454809f9ffb3496aaa78fa71e193ffa8abb16bc70fa7195e4151"
+    },
+    {
+      "path": "src/px4_msgs/msg/UavcanParameterRequest.msg",
+      "sha256": "203689ecb37ef050db3b576a98003d242d19813887d4064e1e78284f5618dbeb"
+    },
+    {
+      "path": "src/px4_msgs/msg/UavcanParameterValue.msg",
+      "sha256": "90fd5600ca92bc71f317db46e1938ecba772e15aafc5accd280e513e0919da68"
+    },
+    {
+      "path": "src/px4_msgs/msg/UlogStream.msg",
+      "sha256": "f5cc70713b624b061b2b98e497cc61c4fc1c50769cb0095a4d935a4106833bb1"
+    },
+    {
+      "path": "src/px4_msgs/msg/UlogStreamAck.msg",
+      "sha256": "d57b51b75289b8eee97dcc3d1a5ee4224a63893332da7530c60a797740f563af"
+    },
+    {
+      "path": "src/px4_msgs/msg/UnregisterExtComponent.msg",
+      "sha256": "9058ad510bebfeb3e1f119695369a2a62244e3b47f14224f20f4eaa576adf934"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleAcceleration.msg",
+      "sha256": "6ce08d0cb509df2b2db63518c4657b9df8c48e8626e1723d0684070de143c881"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleAirData.msg",
+      "sha256": "acd9654c855ec025c078eaadada5964c5a50432f5f904362b8137b1c40103d16"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleAngularAccelerationSetpoint.msg",
+      "sha256": "9bfbe4cebf729c29566f38dba4d092e70c180d1233797ff7c26a05797704dce4"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleAngularVelocity.msg",
+      "sha256": "4d713992ec958004629e5c8cbb5e83df2824c6df06e4cb4b06b3e0e3127bb3bf"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleAttitude.msg",
+      "sha256": "d23f153b574daad31f21f767bc6e2781bcd486bb9e56c605b8b6fd10814b1c74"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleAttitudeSetpoint.msg",
+      "sha256": "80eeb96b9e66942ef6af451142fc756d18a0ce891ff6c274cb26486b3bf5109d"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleCommand.msg",
+      "sha256": "69468413ecf43ded88642a450d9ba484f43ddac1dccfb25aa12f54bc99d7a9ac"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleCommandAck.msg",
+      "sha256": "c3b3f42ef255678d0b112435183ba546ba772abd74e498448f8294c520ed3b8c"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleConstraints.msg",
+      "sha256": "bf70f44e4a4e15eaee9167d25bb10e8a483dd26cf75eb2a48b33847c03fdb324"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleControlMode.msg",
+      "sha256": "7aefe90197d96024c4e4c5a9f71e5dba1ad9b6f6a16b272e81f81329bb012bcd"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleGlobalPosition.msg",
+      "sha256": "ace04d2f4529266e3322227a75d0bdadc1537151aa6bc5faa2d60ec712fe6b48"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleImu.msg",
+      "sha256": "36cd02728d1f825bb7da37e03624b8e2e7d055ae76aae1576aaffad6197d92bb"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleImuStatus.msg",
+      "sha256": "f166cf6d8f5bbd1b7439a0f40092cf70273c58e60c90d92b929bdea42d62e206"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleLandDetected.msg",
+      "sha256": "479ef4ed2bdf80acd4fe1d5cca988ee3dfe49e703494339eb7b62a01f00632f8"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleLocalPosition.msg",
+      "sha256": "87d7540cb4207d044d69ff9af11c51f7cd2883f4160fc62650e17d80cbbec5db"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleLocalPositionSetpoint.msg",
+      "sha256": "b27bb0f8769901c5b6f2c97d1de68658f0728a64aa105c51237c5cd9d84c447d"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleMagnetometer.msg",
+      "sha256": "d8ac3f5c0711f33d91a3b4736454d9f350bae122e4e6567f0df7f5667d114acb"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleOdometry.msg",
+      "sha256": "a528b3d0b4c1a9083a71b32c367bad71a900e959efd82b9d03a9eb0e99fe6017"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleOpticalFlow.msg",
+      "sha256": "21d28d74298ee18dc468392c19108e4d642072caaf7f7e93ff270de733041a63"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleOpticalFlowVel.msg",
+      "sha256": "376191b6299d638b07b71d9c62e38d5e83cf097a3b2005a9c98f9b7fc4090bb2"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleRatesSetpoint.msg",
+      "sha256": "ffd2818487ed90b95908a20b967a6ec4357a922aa59ca00919b01638f06a6c58"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleRoi.msg",
+      "sha256": "609aae1d710007d3236f2d7d5ea4eab12d935c1bb277707e97a8f4e971d5d5f5"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleStatus.msg",
+      "sha256": "ceece55d0104452a199018918fe96dfb560f91bef3f57f31e8fa90a0c4232b1f"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleThrustSetpoint.msg",
+      "sha256": "80c17f7b35173388aaf90da7447a348a96962274a00610da6a55295916e0c42e"
+    },
+    {
+      "path": "src/px4_msgs/msg/VehicleTorqueSetpoint.msg",
+      "sha256": "78ea10ffdc7bf8932b186785a80fb1db0a1966c0f90656e9a64027084e2b74ca"
+    },
+    {
+      "path": "src/px4_msgs/msg/VelocityLimits.msg",
+      "sha256": "6c7f8f64a2f934ab5fbbdc2dd9042e80f061e63de047ce29fba0a92542b0a021"
+    },
+    {
+      "path": "src/px4_msgs/msg/VtolVehicleStatus.msg",
+      "sha256": "7bb9521193128f01902f157fa78b93978473f61e9e7384c15073e4a5133b5c81"
+    },
+    {
+      "path": "src/px4_msgs/msg/WheelEncoders.msg",
+      "sha256": "fc8becb5d133787e03c4d0c5ab3d1491f116aa01300a225531916596c05fed59"
+    },
+    {
+      "path": "src/px4_msgs/msg/Wind.msg",
+      "sha256": "c1850989e1e5c9c87ef5ef02d54e5190b9c1398045495716b4c787f4ad31d9e9"
+    },
+    {
+      "path": "src/px4_msgs/msg/YawEstimatorStatus.msg",
+      "sha256": "fadb4256edee20819637de979e091932d3417d96344abf62f4a4cd54a0e305b0"
+    },
+    {
+      "path": "src/px4_msgs/package.xml",
+      "sha256": "f4cb8d98daffc33cc9ca2dd895f83b156ed07fdb54a133088c075edea4ab576d"
+    },
+    {
+      "path": "src/px4_msgs/README.md",
+      "sha256": "9907a0ba73db29281b71029712489e9c267b11036335a83546cffa5104daa635"
+    },
+    {
+      "path": "src/px4_msgs/srv/VehicleCommand.srv",
+      "sha256": "86e14ec9e82dd69a1390406f1fa1ac3e91895031966f23f24de4351bb9af4424"
+    },
+    {
+      "path": "src/quadruped_ros2_control/commands/control_input_msgs/CMakeLists.txt",
+      "sha256": "6c0d67ffe0aa9956ba7effb55b77c27d0a7aff6b570f968f29d690a44fbd3202"
+    },
+    {
+      "path": "src/quadruped_ros2_control/commands/control_input_msgs/msg/Inputs.msg",
+      "sha256": "925efadf821ef7bfef34f34453b212cd6d24c907b55684f88c1aad7afad02ad7"
+    },
+    {
+      "path": "src/quadruped_ros2_control/commands/control_input_msgs/package.xml",
+      "sha256": "0dcbdc01028f39df79620ece34110660987514fa7176453b1013500383b37722"
+    },
+    {
+      "path": "src/quadruped_ros2_control/commands/keyboard_input/CMakeLists.txt",
+      "sha256": "53adc7064341994ae91b0c7855dd317b3fee4d6f3b27c65b92c4a6f3bd72fdc3"
+    },
+    {
+      "path": "src/quadruped_ros2_control/commands/keyboard_input/include/keyboard_input/KeyboardInput.h",
+      "sha256": "e2c6ed8f707a7b6a5c2715f3b97c59d8af62ad77d70fd87dd04c58890eba721e"
+    },
+    {
+      "path": "src/quadruped_ros2_control/commands/keyboard_input/package.xml",
+      "sha256": "9d9d1ceb94d24ae5946d71bf238ed0fa53852a5dfe8f2b9b04f9e980a2983c85"
+    },
+    {
+      "path": "src/quadruped_ros2_control/commands/keyboard_input/README.md",
+      "sha256": "c070ff50e7bd814eb30db2059cb57ed5f7019faf126ae51d6e3f57febe733cdf"
+    },
+    {
+      "path": "src/quadruped_ros2_control/commands/keyboard_input/src/KeyboardInput.cpp",
+      "sha256": "7555c0e28e160482714372e4712049dbb7c2c8c08e6811d6a7e77e21b483417d"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/CMakeLists.txt",
+      "sha256": "2b8916d94b07508f7c52b36d4c0d58cfe527e7417ef63b588862671a500893d1"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/common/mathTools.h",
+      "sha256": "9bcfc36e5eaac2beca75fb3cf85d064c79ff9584070bc92fd28a93569836e739"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/common/mathTypes.h",
+      "sha256": "b8f0f207a8c3350152f1d35e4e6d814eae2cadd3fa359876ab0b5d13ed26d120"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/control/BalanceCtrl.h",
+      "sha256": "450da917e1fc9e72da99f11a3a88a3254996a56e0dcec59c4a2b36a150d94868"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/control/CtrlComponent.h",
+      "sha256": "239f3c67af5dc29f4d948e1ab19e7c5d08602c82d55e3f0c016eafc9ed3d0662"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/control/Estimator.h",
+      "sha256": "a9f3b7f842f0f494dc4431f7a6fa3e49640c80bb8f60c15e3428ad67b02bc1a8"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/control/LowPassFilter.h",
+      "sha256": "65f5296bd742693ee0ce4117fe8954489614fb96f65c3551eba6ecee25377113"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/FSM/StateBalanceTest.h",
+      "sha256": "e7f336a78b014851bb27879f7ba455bfdd56ba5bef4bb4a2ffe28be10237efb5"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/FSM/StateFixedStand.h",
+      "sha256": "a4165ec552356b7b8b183ff6054b0a755874c89ab40afa143a89a232185f3ca5"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/FSM/StateFreeStand.h",
+      "sha256": "7ce462e72b5110d31dc60f966cfbded2eca03efaec12dcce82b6badef8bcdb91"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/FSM/StateSwingTest.h",
+      "sha256": "d329d127fa38f44ad062a440b61736662bad6347713aa1e077ab24fdf0d4335e"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/FSM/StateTrotting.h",
+      "sha256": "b9173062412ad6ac874d6cd90c1820a5e0f6ca4186ef552f67895790a87a3188"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/gait/FeetEndCalc.h",
+      "sha256": "8554feadf8348549a6e6e383495c529c85f80acf50c0db26be52b3df410ca865"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/gait/GaitGenerator.h",
+      "sha256": "710db5920a53cb9ec3a5616598aa808510afb79dab0e50792529feca1556f2b6"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/gait/WaveGenerator.h",
+      "sha256": "09043c18d4828a28ceb05d2e65284f285cbbf4228b9ce7af11f41752ddb601aa"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/robot/QuadrupedRobot.h",
+      "sha256": "7cc6ac46193fc0f244f7e142887849688b32215dd7e954f3852ce06c2255f230"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/robot/RobotLeg.h",
+      "sha256": "bf02ffa66628cee0f5d343b64b0f0fd9be38228f9310b63553186e2ac1123235"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/include/unitree_guide_controller/UnitreeGuideController.h",
+      "sha256": "3f0c37d6efe2a8bdc43a279f6f46bebb136101063e9d8d817442f476ddf9b0cd"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/launch/gazebo.launch.py",
+      "sha256": "0b9b582d3180a3280d7cd28898e45f9638fb7a085bd2e1455b5d2fbf155adda1"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/launch/mujoco.launch.py",
+      "sha256": "54d15f831a91df8403b3d0bfc6da37124d94228889717c982827b5bc1472d91c"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/package.xml",
+      "sha256": "6591f0115229ba173c7a30238455099aafd21015fe86778e4a04135f55c950fb"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/README.md",
+      "sha256": "9d9a2f9f2cb3388de65e8be518c2686214665598f7bd29747680fa661ae5252d"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/control/BalanceCtrl.cpp",
+      "sha256": "fdd18ee20e899913008f84189217eb83d644f4cd41002678f88273dab445595f"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/control/Estimator.cpp",
+      "sha256": "c2806c13104975dedda4292f61dcaf4515f15f601b43d27b6b7f00f659fb2497"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/control/LowPassFilter.cpp",
+      "sha256": "cfb9c3d7e9af753fa8730072389cf68bb5fc9f79822539e14bbdf7c494e905c0"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/FSM/StateBalanceTest.cpp",
+      "sha256": "a69e35c6bd9b4cc4770396573a19e181af0f03dfcf364589b261ad19f34fbcc9"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/FSM/StateFixedStand.cpp",
+      "sha256": "4a3a1a177d06e4d06929818437640be8d75752ab377454c3c3aef64d97770036"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/FSM/StateFreeStand.cpp",
+      "sha256": "1c4b9e7558aed7cb960149d84fdcdcfc6773113dc59e21b95c2b25c641cc52b3"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/FSM/StateSwingTest.cpp",
+      "sha256": "b8db9828e9f424daebaaa618312096deb2a4ea4ffbe429da200556bf319be250"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/FSM/StateTrotting.cpp",
+      "sha256": "14e6767291aca6966d7dc8d04c3581d5205ffccacd33806d9419d05bb842916c"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/gait/FeetEndCalc.cpp",
+      "sha256": "30c377bf02a06964524131d545871557707a0d3028311f4ad1e7800ae17e9095"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/gait/GaitGenerator.cpp",
+      "sha256": "2daa04b12b89b47c1d78edd800a967f4665080d6e5d0a09c5f991954a378e34b"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/gait/WaveGenerator.cpp",
+      "sha256": "ba8b6aa600b80c9589d225c6d7802751a2489211ff1a6b6479ea354186149e63"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/quadProgpp/Array.cc",
+      "sha256": "23105bf877b68cc969524a5ba29edc1f2d956d529907ab8666bd460ba45b56fb"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/quadProgpp/Array.hh",
+      "sha256": "926ce2e3f153b411ba3a5953d81d3b1300341f5e22f466b69fed52be4e82e0fb"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/quadProgpp/QuadProg++.cc",
+      "sha256": "5559cbf33559fc8b56e684a062440c7428ead7f59481ebd6de563531b9badd3c"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/quadProgpp/QuadProg++.hh",
+      "sha256": "601e076c43d74e53eff351ceb42284059985912528c1d765bd202cb20bf03095"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/robot/QuadrupedRobot.cpp",
+      "sha256": "5eeea543bc24470aa5298090d755bd406253a3bbaf62cba2652671eeee7cba41"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/robot/RobotLeg.cpp",
+      "sha256": "b6ec6c50b056d26973cd5dd816089371f84841736b07912309c828691c9bcc09"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/src/UnitreeGuideController.cpp",
+      "sha256": "acf6f82b636957b7460d5ce679f7c6d0be5f224d87f031485480407bd863faba"
+    },
+    {
+      "path": "src/quadruped_ros2_control/controllers/unitree_guide_controller/unitree_guide_controller.xml",
+      "sha256": "44d2d58888ffac8ce82bd8d2d317c9d862f8f37b405a50dd738f6f82c6acd57a"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/CMakeLists.txt",
+      "sha256": "e6f5e68a4a017a1d5c7dbfa99cc2c8a23e1aea486884de1efe15d4a0c2a9ab42"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/config/gazebo.yaml",
+      "sha256": "e29eeb1429c42a10cd07264c2c2646abf229b3fae79b75e782acd6a65f52868b"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/config/himloco/config.yaml",
+      "sha256": "b2eacb9ebc98286576b155385768101a7a0eae5dc1d87c32c3a221f750bf6b1e"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/config/himloco/himloco.pt",
+      "sha256": "d9945f85a39944aaf241a67f7d2b25a15326a0222d0e503aeb05a7f188430509"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/config/legged_gym/config.yaml",
+      "sha256": "be764bf36cdb659d4c1d07a359ea355dec0b2585254c8fb1c3cd10f392bd62ec"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/config/legged_gym/policy.pt",
+      "sha256": "6348cd9ccf1a6e1c7c57a48f578cb7d4f35a1d0c0ac8600e34899b2606ea2f22"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/config/ocs2/gait.info",
+      "sha256": "cad4da4ac05edff45f2244feb7b436112f2ed7cf9d456a6650bb120c10e2708f"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/config/ocs2/reference.info",
+      "sha256": "4a8b72599d81c5e71e72fd20368eadacbad0b381f85b6824482cc0878bb5a80c"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/config/ocs2/task.info",
+      "sha256": "bf3a6f7fa4d3d7da7d3f6287946b82774a98d0fc17c6fe4b085e06cbec282a52"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/config/robot_control.yaml",
+      "sha256": "00fefe93213c706dbcd3b26a06da19a6321ce84d8130966fc7661a06842e4d87"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/config/robot_lab/config.yaml",
+      "sha256": "0cc2ae3c4aa43e9aae80a654326e2e14948782fd19ff440ba9ff38a4607cc7ce"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/config/robot_lab/policy.pt",
+      "sha256": "9f14cb95e74ac9e5e30954da0fc0c33eaa41e337852ebed19fcee869279ade0b"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/config/visualize_urdf.rviz",
+      "sha256": "a9c6a5697fa2042d6a088d83add2d8b9b69e1830b16676863323c39b36bd3707"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/launch/gazebo_rl_control.launch.py",
+      "sha256": "33fdb225de55f7afec4b7d66d260640aebeeea74dbf0ffdb6dd4d43b3fae5063"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/launch/visualize.launch.py",
+      "sha256": "0ba51add9a10f13fec966b237cc4abe7c38b7bc83aacc809ba1d75c74c1ef0fd"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/meshes/calf.dae",
+      "sha256": "29872fa1a435b92bc2b395fdfa7f0aee26101db3c494681896bd4ef24ee7883c"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/meshes/calf_mirror.dae",
+      "sha256": "79c66be7ed06760bd5001c067a1fb0ac517f639d8b1a5f89be471903b3f359e1"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/meshes/foot.dae",
+      "sha256": "ffbd95fd641866ce9bd277aa249b92dafc9148d70131fa2c52709a35ce5b710b"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/meshes/hip.dae",
+      "sha256": "8735e10617afe252cef0844c1d139d15bc6d4c653660d742fea9fe05c2704d8f"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/meshes/thigh.dae",
+      "sha256": "a622381ae308897ff143b8bbf02f075457c342b22984205040424a5a983246fa"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/meshes/thigh_mirror.dae",
+      "sha256": "c7bae0b0565c2aa4b7cc15a538d795e9153e0f10c821cc18429e92693172bdc6"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/meshes/trunk.dae",
+      "sha256": "e52bebbb5c7ff1f6aedee620c9b5b349f6e965360ecc63a9bb743eeff2d0be64"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/package.xml",
+      "sha256": "57ba0c12e0b64bf897a5d4c1e273c59fc6119283c1e0a83fd924a34bce1f525d"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/README.md",
+      "sha256": "ec8b8d241fe6d05b346716ca3917054f3a6b509a62391ba0c00d23b30322b10a"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/urdf/robot.urdf",
+      "sha256": "e93dda616531edb96de5c9348d85ec05fb89687e8f0ae14f09725d2ec1e53fa7"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/xacro/const.xacro",
+      "sha256": "1476fae34824c1b6934b59e74f74a7663a6a506a36dc42c05d031e4c44d3c191"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/xacro/gazebo.xacro",
+      "sha256": "6c25e5b47e2ac1cfa98cf5aca1342148b39843d6f534d9b4be7442da3c0d2ece"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/xacro/gazebo_classic.xacro",
+      "sha256": "ff71354418c726f4c2ea414988bce271ce2f74280174cccb526d3699acae9b7b"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/xacro/leg.xacro",
+      "sha256": "4b20d98f7e36dda1cb30201d38a6ebe29c6b282deca2ebcc580ca5ed2ea5065a"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/xacro/materials.xacro",
+      "sha256": "834fc4ef93182212f5aba2d9285b556d0d95ce49e49c8d40f006be8fa5ed70a2"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/xacro/robot.xacro",
+      "sha256": "5fa011fe42970ee730e1c27481676baba3ff38ded1d19d21895fc35507d17c67"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/xacro/ros2_control.xacro",
+      "sha256": "185949ffdaf1c32d7da11f90da712088c234459a9e415d212a82c9b206162a24"
+    },
+    {
+      "path": "src/quadruped_ros2_control/descriptions/unitree/go2_description/xacro/transmission.xacro",
+      "sha256": "ff437ff44f86f86db5236738edd826a4c7ac350a1819b79a42d092c18ce6fb8b"
+    },
+    {
+      "path": "src/quadruped_ros2_control/hardwares/gz_quadruped_hardware/CMakeLists.txt",
+      "sha256": "39bf53c76939787a90d4898cf44d7d321dca51adae2b5c4a09dbcea48f085a42"
+    },
+    {
+      "path": "src/quadruped_ros2_control/hardwares/gz_quadruped_hardware/gz_quadruped_hardware.xml",
+      "sha256": "bebb3fb069bb931a090901284ce345b956120e3bec817a4381c978fd260c3403"
+    },
+    {
+      "path": "src/quadruped_ros2_control/hardwares/gz_quadruped_hardware/include/gz_quadruped_hardware/gz_quadruped_plugin.hpp",
+      "sha256": "24febd4e8af7b53b815e0a687a92a775c9604b218a213fcafb49faae4b762084"
+    },
+    {
+      "path": "src/quadruped_ros2_control/hardwares/gz_quadruped_hardware/include/gz_quadruped_hardware/gz_system.hpp",
+      "sha256": "a17d88be27e56b5f2c130b5d64d41383a1997ece2d00433108df517622108f0a"
+    },
+    {
+      "path": "src/quadruped_ros2_control/hardwares/gz_quadruped_hardware/include/gz_quadruped_hardware/gz_system_interface.hpp",
+      "sha256": "2d896f29d00339bf82f7afac8ce63fca13ee277cc6eb084e3594c83c522db8c6"
+    },
+    {
+      "path": "src/quadruped_ros2_control/hardwares/gz_quadruped_hardware/LICENSE",
+      "sha256": "7c87873291f289713ac5df48b1f2010eb6963752bbd6b530416ab99fc37914a8"
+    },
+    {
+      "path": "src/quadruped_ros2_control/hardwares/gz_quadruped_hardware/package.xml",
+      "sha256": "33522b97779ce93d93cac3d9db680cb1c569393b9e2a51acb7013ffa4162c10f"
+    },
+    {
+      "path": "src/quadruped_ros2_control/hardwares/gz_quadruped_hardware/README.md",
+      "sha256": "d151bbdca7cdabea3b29e34a2ce7fe922b2fc17c6b7a559e52125c823cf356ec"
+    },
+    {
+      "path": "src/quadruped_ros2_control/hardwares/gz_quadruped_hardware/src/gz_quadruped_plugin.cpp",
+      "sha256": "e3015ac3317a54bdd373a9a082b14b7adb705b867a23a8f2d3bee78ab1711671"
+    },
+    {
+      "path": "src/quadruped_ros2_control/hardwares/gz_quadruped_hardware/src/gz_system.cpp",
+      "sha256": "9b4d7889e55566d39fc101505212ac37854fa1b29668dfa9ae0976d292d73eea"
+    },
+    {
+      "path": "src/quadruped_ros2_control/hardwares/gz_quadruped_hardware/xacro/foot_force_sensor.xacro",
+      "sha256": "ab571de1572b74c9e2c372979f471f24f4363bd8b754317501d18ed498419aa7"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/controller_common/CMakeLists.txt",
+      "sha256": "e685c00913e6d71f5f8339fd8efff0e8382d3119ec64ed6cdc9802e46dbcb2e5"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/controller_common/include/controller_common/common/enumClass.h",
+      "sha256": "1a7258396b652f7fc027132bfaf79a3153bad5e1610faa7bf4db74217c364b28"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/controller_common/include/controller_common/common/mathTools.h",
+      "sha256": "9bcfc36e5eaac2beca75fb3cf85d064c79ff9584070bc92fd28a93569836e739"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/controller_common/include/controller_common/common/mathTypes.h",
+      "sha256": "b8f0f207a8c3350152f1d35e4e6d814eae2cadd3fa359876ab0b5d13ed26d120"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/controller_common/include/controller_common/CtrlInterfaces.h",
+      "sha256": "eb93bbf8a0f0e19df1ee04413cd42d97c341adea95999bd2ec9f182d5e9f4b33"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/controller_common/include/controller_common/FSM/BaseFixedStand.h",
+      "sha256": "640afcbb47faf5c3a7a9edb37c2f84af452fe58ab05398d452daa8b8265115f1"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/controller_common/include/controller_common/FSM/FSMState.h",
+      "sha256": "5d140fc80d99eaf3a82f71854ceffa82f9b8732a610a81273f32848ba4cb2c58"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/controller_common/include/controller_common/FSM/StateFixedDown.h",
+      "sha256": "13a62cc59fd2860239ea5219d939fdccb646bb81ce74cbac1256f6ae518b0b8a"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/controller_common/include/controller_common/FSM/StatePassive.h",
+      "sha256": "81e06f86be2e0d353fb1d85b718f676942051467a4f63a23242e0c83c0ceb483"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/controller_common/package.xml",
+      "sha256": "5e27416e215b2215c00163bdd1d18c5fedcceaa29a6f09158a6fd0badbecf9a1"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/controller_common/src/FSM/BaseFixedStand.cpp",
+      "sha256": "128c15e5f87e8e6e6eb46724237b264121f3cba69036accf0b9766cf4c5cd907"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/controller_common/src/FSM/StateFixedDown.cpp",
+      "sha256": "3e0cf1024a269d0535770002371c4f0155d3607d7c7e110c21074642adc046c8"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/controller_common/src/FSM/StatePassive.cpp",
+      "sha256": "ef500b37860c6dd1661a918587c09c30a61fa3d4d43026af1d47d53036a48ef4"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/CMakeLists.txt",
+      "sha256": "b29db0eeee9995204267bc28455db40bcef4b654db61b3942b2799f15b4ad8d7"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/config/cartographer/cartographer.lua",
+      "sha256": "9cf7ec2b9c7eaf4964c592905a8fd18b928fce4c1f940c4ec99b4abfffbbcc69"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/config/cartographer/cartographer.rviz",
+      "sha256": "bb2e72b552c5676ac5c1160862c6fb1b858be5af818fe5b7f3e2ade1647efca7"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/config/fast_lio/fastlio.rviz",
+      "sha256": "b43816e3793d26a5904f5378c0d6f9ee8566409c965dca58ae4ab5a8555160d9"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/config/fast_lio/fastlio.yaml",
+      "sha256": "c7d33a34a1dc9852875a0e3f8eb334635a4aeff4215aada1f260ee3c790ef2e6"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/config/ocs2.rviz",
+      "sha256": "ec874937aa4f47782c9a35e8f9df18d898bd250e9634345e795646f598d6c433"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/config/rviz.rviz",
+      "sha256": "1a34d6b2f117917de940dd92054a91586d6eb67fc6c730aabb6758a2e93fc9b9"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/launch/gazebo.launch.py",
+      "sha256": "e269e76a24a7cb871b259f5b1809f1fdcf4545f5cc0e82adee0225af443821bd"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/launch/ocs2.launch.py",
+      "sha256": "e56815e0049374d7db23b87848c654fb421ffe1668381744519725c23d52ce0a"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/launch/slam/cartographer.launch.py",
+      "sha256": "9cf5cfa83bd84e30da30b446ee0b981352c1b5818672b8c89aada9b4001f2788"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/launch/slam/fast_lio.launch.py",
+      "sha256": "b4c6aa925343151daa23b41aaaf6902988b3fd92b58eddd812d6bf9b91711961"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/launch/unitree_guide.launch.py",
+      "sha256": "a99815f40e4f12a33e9c9d6e621a678bfb5f18f3e08ab46946af0b2d1b8955d6"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/D435/materials/scripts/model.material",
+      "sha256": "a9b60903fc588f2f95fb4a01db9cbb035fa0f77ffbb3d7fa963edf5637062f3a"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/D435/materials/textures/RealSense_Albedo.png",
+      "sha256": "a6e756f73af3545ad41a7a66a819d1136b8698d65b7b4b2ac91a01d898e48b28"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/D435/materials/textures/RealSense_Metalness.png",
+      "sha256": "275018dd1ac2d554a338206f8731db375efcae5896d42eee8091af0411ee6b6d"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/D435/materials/textures/RealSense_Normal.png",
+      "sha256": "0a25d1300886e86e3b7a49b16ce5b68e7a9b5fdc4032e70312008d3453cf0576"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/D435/materials/textures/RealSense_Roughness.png",
+      "sha256": "27e1bce0c8a9363ea2ab313c1cf763c86d87d3abcb68131204bb3581e7d2e1a4"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/D435/meshes/realsense.dae",
+      "sha256": "50521bbe8a5567d06ea8a029d75266d3d4f82f8308c056c79017cbd7f857c417"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/D435/model.config",
+      "sha256": "fc805afe293a2c0081b34b03ac8de22a3fd2dee02d8bcb32f010f5d3c06f5d75"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/D435/model.sdf",
+      "sha256": "7e3cb142a3178efbd91c917ab8aba390cb8c572c6e082e03d12a2228bafd9130"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/D435/model.xacro",
+      "sha256": "92f5b4e78e479b82dcf8d4972ad2cd8d3902cb1a4dcd5d5fcb21cc2734dc4dd7"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/D435/thumbnails/1.png",
+      "sha256": "bd99d9323d2e788ab266ecf5f9b8c153d2fed8bd33298966b40e55a2b9588594"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/D435/thumbnails/2.png",
+      "sha256": "c326b3831c00a74ed2a0b34abb8371f03dc75409534dbd3e5d3215ec11b3de3a"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/D435/thumbnails/3.png",
+      "sha256": "1f2f83ee635477f173362736a0d311d09922bd66503be61e9ebdbbf6b440c442"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/D435/thumbnails/4.png",
+      "sha256": "2eb938aa3e8c09a7dec431603ad5034f4f9b0df2f05be823b8714d16b1428d09"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/Lidar3DV1/materials/textures/lidar_3d_v1.jpg",
+      "sha256": "57210c597aed2e46a95d9a95659c8d4066668c4ae03e9175bb4fca34bbc15fc7"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/Lidar3DV1/meshes/lidar_3d_v1.dae",
+      "sha256": "313ecfaba00e44791844a4f41f87817b7b7adcddf128d53985e68ce27030cbaf"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/Lidar3DV1/meshes/lidar_3d_v1.jpg",
+      "sha256": "57210c597aed2e46a95d9a95659c8d4066668c4ae03e9175bb4fca34bbc15fc7"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/Lidar3DV1/model.config",
+      "sha256": "119d34f95fbcba699a9bc905e6e82b1a84e719fd7823437b2e9bcc39decf4378"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/Lidar3DV1/model.sdf",
+      "sha256": "4eeb3211bcc438d947faad04be9ffbe280705cfe42f5b002d048aa7402dfb5f7"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/Lidar3DV1/model.xacro",
+      "sha256": "ad34138736821a841456593aaee0d8a54611eebc347bf474043946befa58cd5a"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/Lidar3DV1/thumbnails/1.jpg",
+      "sha256": "b19b528ffbb3d1b947e757cb38f3ba9110854fca8a5ed20751f86e8b1be6dcac"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/Lidar3DV1/thumbnails/2.jpg",
+      "sha256": "d719bbcce46e1fef6f42f41b9aae081499e4fbda5ab6c6487407c11dce814843"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/Lidar3DV1/thumbnails/3.jpg",
+      "sha256": "429316c336834af0e25f36bf66a90786440d57da6b348858421d6023f7bb8c65"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/Lidar3DV1/thumbnails/4.jpg",
+      "sha256": "5d522409600701dd7b70f644d22bddf30b7ee73f1f11f0de05d4f1dbb28e2f47"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/models/Lidar3DV1/thumbnails/5.jpg",
+      "sha256": "d7163272b315c10deb6b5639a77fe8b78ce024a242346bbb02dad9b84cbbd1c7"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/package.xml",
+      "sha256": "325d7031d0c70cda6aec462f08c0e1394a7d0df621abb8b0af846b0f803c9ed8"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/README.md",
+      "sha256": "4e458f00541db669c84ec8161289301dd1587806b90a7281e77fa0d9bf38c06d"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/worlds/baylands.sdf",
+      "sha256": "d82eea8df080c51c997e0b2782868e130b0bb411fe78bfaad46096c5fbeb68bd"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/worlds/default.sdf",
+      "sha256": "9dd500386a42646b625581f66fcb2f5737a138eb690ff0456e0c8c40e790a7a4"
+    },
+    {
+      "path": "src/quadruped_ros2_control/libraries/gz_quadruped_playground/worlds/warehouse.sdf",
+      "sha256": "c42c35ef294d80405a61dd45adfe3aa7358402499067d5e21cb58378ba4d73ec"
+    },
+    {
+      "path": "src/quadruped_ros2_control/LICENSE",
+      "sha256": "5e5283dd0d78eefeaf215bd88d14d72f3385b4eefef48be010be8b49c9af7bdb"
+    },
+    {
+      "path": "src/quadruped_ros2_control/LICENSES/legged_control/LICENSE",
+      "sha256": "a589fc75b3483509a7607135d6acc0c0f861c177bc731e247cb6d7c1656181dc"
+    },
+    {
+      "path": "src/quadruped_ros2_control/LICENSES/unitree_guide/LICENSE.txt",
+      "sha256": "2b794acf1e250f5545ae5a47d81e5685ea5488ce077d1087ed8be5f81e9ba5c0"
+    },
+    {
+      "path": "src/quadruped_ros2_control/README.md",
+      "sha256": "5e816f0fc3a11fa89ef376e91d23e7311b090ae5bfaf0b07b2d99a1f2c9effd6"
+    },
+    {
+      "path": "src/uav_dog_nav2/config/click_navigation.rviz",
+      "sha256": "319626d950fe4005b25d50ba9a0b091f2f632cd1bc57007ec9770cca020c371d"
+    },
+    {
+      "path": "src/uav_dog_nav2/scripts/click_nav_core.py",
+      "sha256": "6f89fa7dd773f0350e0ff103a17c36d9658518b84b86edbd67967ac8ee40d348"
+    },
+    {
+      "path": "src/uav_dog_nav2/scripts/click_navigation.html",
+      "sha256": "bdf3227c52ab837ee040c272a2e40f882c2e86eef5c8fa0dd08b840ddc27abfd"
+    },
+    {
+      "path": "src/uav_dog_nav2/scripts/click_navigation.py",
+      "sha256": "fe961af6fb004828c68e6b0b204b059f5597a7260c5fcedfebb49b7e1905b329"
+    },
+    {
+      "path": "src/uav_dog_sim/CMakeLists.txt",
+      "sha256": "e9417da490f9835cd2a87db503fe3f56cd2263c48f7020f51aec6e8e47e10551"
+    },
+    {
+      "path": "src/uav_dog_sim/launch/chemical_plant.launch.py",
+      "sha256": "adc7b3b34316f9843e04d371a93b7d434248a5de2e161b84a463cdc4569fd6fa"
+    },
+    {
+      "path": "src/uav_dog_sim/package.xml",
+      "sha256": "2e2ed22796316478e1674597253ff534fbd802b77955c5eaeb2426b000f268a6"
+    },
+    {
+      "path": "src/uav_dog_sim/worlds/chemical_plant_v4.world",
+      "sha256": "53e7b449dcdefdef3b1d86947fe4a8bfa4f6bf50824852ce5e9b1bb7363e0cef"
+    },
+    {
+      "path": "src/uav_dog_sim/worlds/square_obstacles.world",
+      "sha256": "32c3b546ce258b30f32cd19f9734d1b7eb719646229883ec26183136b880e739"
+    },
+    {
+      "path": "tests/test_click_navigation.py",
+      "sha256": "aa026b264a0f2473e89ef9af5d96ea503ecedc1c4234053634c5842554c13f87"
+    },
+    {
+      "path": "tests/test_dog_path_geometry.py",
+      "sha256": "9eadcaff5bb6979a72b42c276065bc3cee553a1b8eb782bf558dc301b5a60b73"
+    },
+    {
+      "path": "tests/test_grid_shortcuts.py",
+      "sha256": "d07602597822306f860ebbf95a39557243dc59e6380b9167dad472195b4478fc"
+    },
+    {
+      "path": "tests/test_mapping_filter.py",
+      "sha256": "cb67d17d6cc63f72d167d8ec178872057bdb1b4ba88d27bd430e0834026062ab"
+    },
+    {
+      "path": "tests/test_plan_3d.py",
+      "sha256": "b3b19a76cb6b206c632b72842c74d3b0a80619db4f3960128738fca7cdf25ff2"
+    },
+    {
+      "path": "tests/test_px4_route_safety.py",
+      "sha256": "20f779f890511ac6f04061ddbeb4be03ae89edacff016aad5e840ed52699d860"
+    },
+    {
+      "path": "tests/test_static_navigation.py",
+      "sha256": "00a9789b7adab55c4d76fd15c5fbeafc64c3e4c3ea76e57ba0be53a25b9141c5"
+    },
+    {
+      "path": "worlds/chemical_plant_v4.world",
+      "sha256": "16962074e43f753f286e00659faae1cd13d5b10c11084f3f8dd554c65a969614"
+    }
+  ]
+}

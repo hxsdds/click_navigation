@@ -1,0 +1,229 @@
+# Controller Manager configuration
+controller_manager:
+  ros__parameters:
+    update_rate: 1000  # Hz
+
+    # Define the available controllers
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    imu_sensor_broadcaster:
+      type: imu_sensor_broadcaster/IMUSensorBroadcaster
+
+    unitree_guide_controller:
+      type: unitree_guide_controller/UnitreeGuideController
+
+    ocs2_quadruped_controller:
+      type: ocs2_quadruped_controller/Ocs2QuadrupedController
+
+    rl_quadruped_controller:
+      type: rl_quadruped_controller/LeggedGymController
+
+imu_sensor_broadcaster:
+  ros__parameters:
+    sensor_name: "imu_sensor"
+    frame_id: "imu_link"
+
+ocs2_quadruped_controller:
+  ros__parameters:
+    update_rate: 200  # Hz
+    robot_pkg: "go2_description"
+    default_kd: 5.5
+    feet_force_threshold: 4.0
+    joints:
+      - FL_hip_joint
+      - FL_thigh_joint
+      - FL_calf_joint
+      - FR_hip_joint
+      - FR_thigh_joint
+      - FR_calf_joint
+      - RL_hip_joint
+      - RL_thigh_joint
+      - RL_calf_joint
+      - RR_hip_joint
+      - RR_thigh_joint
+      - RR_calf_joint
+
+    command_interfaces:
+      - effort
+      - position
+      - velocity
+      - kp
+      - kd
+
+    state_interfaces:
+      - effort
+      - position
+      - velocity
+
+    feet:
+      - FL_foot
+      - FR_foot
+      - RL_foot
+      - RR_foot
+
+    imu_name: "imu_sensor"
+    base_name: "base"
+
+    imu_interfaces:
+      - orientation.w
+      - orientation.x
+      - orientation.y
+      - orientation.z
+      - angular_velocity.x
+      - angular_velocity.y
+      - angular_velocity.z
+      - linear_acceleration.x
+      - linear_acceleration.y
+      - linear_acceleration.z
+
+    foot_force_name: "foot_force"
+    foot_force_interfaces:
+      - FL_foot_force
+      - RL_foot_force
+      - FR_foot_force
+      - RR_foot_force
+
+unitree_guide_controller:
+  ros__parameters:
+    update_rate: 200  # Hz
+    # Trot limits. Every value can be changed at runtime with
+    #   ros2 param set /unitree_guide_controller trot_vx_max 0.30
+    # without restarting the simulation. The values below are the verified
+    # defaults; 机器狗运动稳定性修复报告.md records how they were measured.
+    trot_vx_max: 0.30              # m/s forward/backward
+    trot_vy_max: 0.08              # m/s lateral
+    trot_yaw_max: 0.10             # rad/s
+    trot_lin_accel: 0.35           # m/s^2 slew limit
+    trot_entry_ramp: 1.50          # s, ramp from zero after trot entry
+    trot_yaw_accel: 2.50           # rad/s^2 slew limit
+    trot_turn_fade_speed: 0.48
+    trot_turn_lean: 0.0            # m/s lateral weight shift per rad/s yaw     # fraction of vx_max where turning fades to 0
+    trot_gait_period: 0.70         # s per trot cycle
+    trot_gait_duty: 0.75           # stance ratio
+    trot_gait_height: 0.05         # m swing clearance
+    trot_yaw_step_ratio: 0.10      # start stepping above 10% of yaw_max
+    trot_yaw_error_max: 0.30       # rad, band that bounds the yaw reference
+    trot_turn_guard_tilt: 0.25     # rad, pause the turn above this tilt
+    trot_turn_guard_release: 0.12  # rad, resume the turn below this tilt
+    trot_turn_budget: 3.5          # rad; permits a full 180-degree reorientation
+    trot_tilt_soft: 0.20           # rad, start derating the command
+    trot_tilt_hard: 0.45           # rad, fall back to fixed stand
+    joints:
+      - FR_hip_joint
+      - FR_thigh_joint
+      - FR_calf_joint
+      - FL_hip_joint
+      - FL_thigh_joint
+      - FL_calf_joint
+      - RR_hip_joint
+      - RR_thigh_joint
+      - RR_calf_joint
+      - RL_hip_joint
+      - RL_thigh_joint
+      - RL_calf_joint
+
+    command_interfaces:
+      - effort
+      - position
+      - velocity
+      - kp
+      - kd
+
+    state_interfaces:
+      - effort
+      - position
+      - velocity
+
+    feet_names:
+      - FR_foot
+      - FL_foot
+      - RR_foot
+      - RL_foot
+
+    imu_name: "imu_sensor"
+    base_name: "base"
+
+    imu_interfaces:
+      - orientation.w
+      - orientation.x
+      - orientation.y
+      - orientation.z
+      - angular_velocity.x
+      - angular_velocity.y
+      - angular_velocity.z
+      - linear_acceleration.x
+      - linear_acceleration.y
+      - linear_acceleration.z
+
+rl_quadruped_controller:
+  ros__parameters:
+    update_rate: 200  # Hz
+    robot_pkg: "go2_description"
+    model_folder: "robot_lab"
+    joints:
+      - FR_hip_joint
+      - FR_thigh_joint
+      - FR_calf_joint
+      - FL_hip_joint
+      - FL_thigh_joint
+      - FL_calf_joint
+      - RR_hip_joint
+      - RR_thigh_joint
+      - RR_calf_joint
+      - RL_hip_joint
+      - RL_thigh_joint
+      - RL_calf_joint
+
+    command_interfaces:
+      - effort
+      - position
+      - velocity
+      - kp
+      - kd
+
+    state_interfaces:
+      - effort
+      - position
+      - velocity
+    
+    down_pos:
+      - 0.01
+      - 1.27
+      - -2.8
+      - -0.01
+      - 1.27
+      - -2.8
+      - 0.3
+      - 1.31
+      - -2.8
+      - -0.3
+      - 1.31
+      - -2.8
+
+    stand_pos:
+      - 0.0
+      - 0.8
+      - -1.5
+      - 0.0
+      - 0.8
+      - -1.5
+      - 0.0
+      - 0.8
+      - -1.5
+      - 0.0
+      - 0.8
+      - -1.5
+
+    imu_name: "imu_sensor"
+    imu_interfaces:
+      - orientation.w
+      - orientation.x
+      - orientation.y
+      - orientation.z
+      - angular_velocity.x
+      - angular_velocity.y
+      - angular_velocity.z
+      - linear_acceleration.x
+      - linear_acceleration.y
+      - linear_acceleration.z

@@ -1,0 +1,62 @@
+{
+  "map_id": "70042553f00624008d42dc52a0f2f6a61c893f5c09607fcff22289d32f9f5310",
+  "unsupported_collision_shapes": [],
+  "dog_z_is_nominal_planning_slice": false,
+  "interpolation_spacing_m": 0.03,
+  "results": [
+    {
+      "task_id": "f33f760f7c854c86b6bb0cb0a9e12572",
+      "platform": "drone",
+      "state": "cancelled",
+      "goal": [
+        14.5,
+        -4.0,
+        6.0
+      ],
+      "samples": 40,
+      "unsafe_map_samples": 0,
+      "minimum_sdf_clearance_m": 0.9082121074403252,
+      "checked_points_including_3cm_interpolation": 93,
+      "minimum_non_ground_sdf_clearance_m": 2.362898723015176,
+      "physical_final_error_m": 18.20225470792439,
+      "peak_tilt_rad": 0.0,
+      "pass": true
+    },
+    {
+      "task_id": "c34c27af07384c4a87e7cf2232d834d6",
+      "platform": "drone",
+      "state": "succeeded",
+      "goal": [
+        0.0,
+        -4.0,
+        3.0
+      ],
+      "samples": 66,
+      "unsafe_map_samples": 0,
+      "minimum_sdf_clearance_m": 2.458369943031055,
+      "checked_points_including_3cm_interpolation": 154,
+      "minimum_non_ground_sdf_clearance_m": 2.458369943031055,
+      "physical_final_error_m": 0.0995695256010651,
+      "peak_tilt_rad": 0.0,
+      "pass": true
+    },
+    {
+      "task_id": "53a57a5577f14fde991a16aba02b23fa",
+      "platform": "drone",
+      "state": "succeeded",
+      "goal": [
+        0.0,
+        -15.0,
+        2.0
+      ],
+      "samples": 172,
+      "unsafe_map_samples": 0,
+      "minimum_sdf_clearance_m": 1.0409675091044874,
+      "checked_points_including_3cm_interpolation": 500,
+      "minimum_non_ground_sdf_clearance_m": 1.0409675091044874,
+      "physical_final_error_m": 0.07073500560117733,
+      "peak_tilt_rad": 0.0,
+      "pass": true
+    }
+  ]
+}

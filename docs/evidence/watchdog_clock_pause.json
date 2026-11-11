@@ -1,0 +1,130 @@
+{
+  "test": "isolated_ros_clock_and_telemetry_pause",
+  "pass": true,
+  "task": {
+    "id": "be37ebe47d514e19a927baa5aaa37503",
+    "state": "failed",
+    "target": [
+      -1.0,
+      -6.0,
+      0.5
+    ],
+    "platform": "dog",
+    "start": [
+      -4.0,
+      -6.0,
+      0.5
+    ],
+    "path": [
+      [
+        -4.0,
+        -6.0,
+        0.5
+      ],
+      [
+        -1.0,
+        -6.0,
+        0.5
+      ]
+    ],
+    "map_id": "70042553f00624008d42dc52a0f2f6a61c893f5c09607fcff22289d32f9f5310",
+    "reason": "stop not confirmed; check robot before restarting navigation",
+    "physical_start": [
+      -4.0,
+      -6.0,
+      0.5
+    ],
+    "created": 1794405222.308479,
+    "auto_execute": true,
+    "takeoff": false,
+    "error_m": 3.0,
+    "peak_tilt_rad": 0.0,
+    "takeoff_xy": null,
+    "static_map_only": true,
+    "height_limits_m": null,
+    "nav_settings": {
+      "dog_vx_max": 0.3,
+      "dog_yaw_max": 0.1,
+      "planning_radius_m": 0.65,
+      "target_height_m": 0.5,
+      "px4_map_origin": [
+        -4.0,
+        -6.0,
+        -0.013
+      ],
+      "require_ground_truth": false,
+      "shared_world": false,
+      "drone_trajectory_speed_m_s": 0.6,
+      "vertical_speed_limit_m_s": 0.4
+    },
+    "max_localization_error_m": 0.0,
+    "obstacles": [],
+    "length_m": 3.0,
+    "height_range_m": [
+      0.5,
+      0.5
+    ],
+    "started": 1794405222.3093824,
+    "stop_trigger_reason": "position unavailable or stale",
+    "finished": 1794405223.9000373,
+    "final_pose": [
+      -4.0,
+      -6.0,
+      0.5,
+      0.0
+    ]
+  },
+  "ready_reason": "stop not confirmed; check robot before restarting navigation",
+  "last_commands": [
+    [
+      1111.84897261,
+      1.0,
+      0.0
+    ],
+    [
+      1111.898794476,
+      1.0,
+      0.0
+    ],
+    [
+      1111.949015666,
+      1.0,
+      0.0
+    ],
+    [
+      1111.99925002,
+      1.0,
+      0.0
+    ],
+    [
+      1112.048663102,
+      1.0,
+      0.0
+    ],
+    [
+      1112.098663094,
+      1.0,
+      0.0
+    ],
+    [
+      1112.148694825,
+      1.0,
+      0.0
+    ],
+    [
+      1112.199008962,
+      1.0,
+      0.0
+    ],
+    [
+      1112.248464674,
+      0.0,
+      0.0
+    ],
+    [
+      1112.298402386,
+      0.0,
+      0.0
+    ]
+  ]
+}

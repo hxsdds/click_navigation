@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.8)
+project(uav_dog_nav2)
+find_package(ament_cmake REQUIRED)
+install(DIRECTORY config DESTINATION share/${PROJECT_NAME})
+install(PROGRAMS scripts/click_navigation.py DESTINATION lib/${PROJECT_NAME})
+install(FILES scripts/click_nav_core.py scripts/click_navigation.html DESTINATION lib/${PROJECT_NAME})
+ament_package()

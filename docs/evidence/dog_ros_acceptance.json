@@ -1,0 +1,239 @@
+[
+  {
+    "test": "action_near_current_succeeded",
+    "status": 4,
+    "task": {
+      "id": "b928a83e9bf945269aa25689a8d39c52",
+      "state": "succeeded",
+      "target": [
+        -4.9022559091092255,
+        -6.850677601502036,
+        0.5
+      ],
+      "platform": "dog",
+      "start": [
+        -4.9022559091092255,
+        -6.850677601502036,
+        0.5
+      ],
+      "path": [
+        [
+          -4.9022559091092255,
+          -6.850677601502036,
+          0.5
+        ],
+        [
+          -4.9022559091092255,
+          -6.850677601502036,
+          0.5
+        ]
+      ],
+      "map_id": "70042553f00624008d42dc52a0f2f6a61c893f5c09607fcff22289d32f9f5310",
+      "reason": "settled goal reached",
+      "physical_start": [
+        -4.9022559091092255,
+        -6.850677601502036,
+        0.5
+      ],
+      "created": 1794406210.239805,
+      "auto_execute": true,
+      "takeoff": false,
+      "error_m": 6.275579484060366e-07,
+      "peak_tilt_rad": 0.0038193234292873135,
+      "takeoff_xy": null,
+      "static_map_only": true,
+      "height_limits_m": null,
+      "nav_settings": {
+        "dog_vx_max": 0.3,
+        "dog_yaw_max": 0.1,
+        "planning_radius_m": 0.65,
+        "target_height_m": 0.5,
+        "px4_map_origin": [
+          -4.0,
+          -6.0,
+          -0.013
+        ],
+        "require_ground_truth": false,
+        "shared_world": true,
+        "drone_trajectory_speed_m_s": 0.6,
+        "vertical_speed_limit_m_s": 0.4
+      },
+      "max_localization_error_m": 0.0,
+      "obstacles": [
+        [
+          [
+            0.020672788101528165,
+            -14.94516960019972,
+            2.0558313164304893
+          ],
+          1.3
+        ]
+      ],
+      "length_m": 0.0,
+      "height_range_m": [
+        0.5,
+        0.5
+      ],
+      "started": 1794406210.3296885,
+      "finished": 1794406213.0494921,
+      "final_pose": [
+        -4.9022564508516995,
+        -6.850677284730714,
+        0.5,
+        -2.38558781868808
+      ]
+    }
+  },
+  {
+    "test": "action_cancelled",
+    "status": 5,
+    "task": {
+      "id": "e280bf7ba6f54c9ca1dc8dbe2012c6cb",
+      "state": "cancelled",
+      "target": [
+        -4.9022564508516995,
+        -6.850677284730714,
+        0.5
+      ],
+      "platform": "dog",
+      "start": [
+        -4.9022564508516995,
+        -6.850677284730714,
+        0.5
+      ],
+      "path": [],
+      "map_id": "70042553f00624008d42dc52a0f2f6a61c893f5c09607fcff22289d32f9f5310",
+      "reason": "cancelled before motion",
+      "physical_start": [
+        -4.9022564508516995,
+        -6.850677284730714,
+        0.5
+      ],
+      "created": 1794406213.3018484,
+      "auto_execute": true,
+      "takeoff": false,
+      "error_m": 0.0,
+      "peak_tilt_rad": 0.0,
+      "takeoff_xy": null,
+      "static_map_only": true,
+      "height_limits_m": null,
+      "nav_settings": {
+        "dog_vx_max": 0.3,
+        "dog_yaw_max": 0.1,
+        "planning_radius_m": 0.65,
+        "target_height_m": 0.5,
+        "px4_map_origin": [
+          -4.0,
+          -6.0,
+          -0.013
+        ],
+        "require_ground_truth": false,
+        "shared_world": true,
+        "drone_trajectory_speed_m_s": 0.6,
+        "vertical_speed_limit_m_s": 0.4
+      },
+      "max_localization_error_m": 0.0,
+      "obstacles": [
+        [
+          [
+            0.043148291599717566,
+            -14.91828882831734,
+            2.0352076398563748
+          ],
+          1.3
+        ]
+      ],
+      "finished": 1794406213.3094943,
+      "final_pose": [
+        -4.9022564508516995,
+        -6.850677284730714,
+        0.5,
+        -2.38558781868808
+      ]
+    }
+  },
+  {
+    "test": "rviz_point_preview_and_execute_service",
+    "task": {
+      "id": "6ad6eff630c9466e8e3bc89c544194a1",
+      "state": "succeeded",
+      "target": [
+        -4.9022564508516995,
+        -6.850677284730714,
+        0.5
+      ],
+      "platform": "dog",
+      "start": [
+        -4.9022564508516995,
+        -6.850677284730714,
+        0.5
+      ],
+      "path": [
+        [
+          -4.9022564508516995,
+          -6.850677284730714,
+          0.5
+        ],
+        [
+          -4.9022564508516995,
+          -6.850677284730714,
+          0.5
+        ]
+      ],
+      "map_id": "70042553f00624008d42dc52a0f2f6a61c893f5c09607fcff22289d32f9f5310",
+      "reason": "settled goal reached",
+      "physical_start": [
+        -4.9022564508516995,
+        -6.850677284730714,
+        0.5
+      ],
+      "created": 1794406213.6130762,
+      "auto_execute": false,
+      "takeoff": false,
+      "error_m": 0.0,
+      "peak_tilt_rad": 0.0038196532149842224,
+      "takeoff_xy": null,
+      "static_map_only": true,
+      "height_limits_m": null,
+      "nav_settings": {
+        "dog_vx_max": 0.3,
+        "dog_yaw_max": 0.1,
+        "planning_radius_m": 0.65,
+        "target_height_m": 0.5,
+        "px4_map_origin": [
+          -4.0,
+          -6.0,
+          -0.013
+        ],
+        "require_ground_truth": false,
+        "shared_world": true,
+        "drone_trajectory_speed_m_s": 0.6,
+        "vertical_speed_limit_m_s": 0.4
+      },
+      "max_localization_error_m": 0.0,
+      "obstacles": [
+        [
+          [
+            0.044753556749250814,
+            -14.920675019884115,
+            2.0310819778569713
+          ],
+          1.3
+        ]
+      ],
+      "length_m": 0.0,
+      "height_range_m": [
+        0.5,
+        0.5
+      ],
+      "started": 1794406213.8003125,
+      "finished": 1794406216.529595,
+      "final_pose": [
+        -4.9022564508516995,
+        -6.850677284730714,
+        0.5,
+        -2.38558781868808
+      ]
+    }
+  }
+]
