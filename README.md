@@ -4,6 +4,17 @@
 
 这是从 `uav_dog_plume` 中提取的独立工作空间，包含点击导航、机器狗步态控制、机器人模型、仿真世界、正式三维静态地图及测试。**不需要原项目目录，也不需要原项目的 build/install。** 仍保留 `uav_dog_nav2`、`uav_dog_sim` 等 ROS 包名，以兼容已有接口；当前规划器是自定义静态三维规划器，不是完整 Nav2 栈。
 
+## 日常启动
+
+首次部署完成后，在 Ubuntu/WSL 终端运行（将路径换成自己的项目目录）：
+
+```bash
+cd ~/work/click_navigation
+CLICK_NAV_GUI=true bash scripts/start_click_navigation.sh
+```
+
+等终端提示服务已启动，在 Windows 浏览器打开 [http://localhost:8765](http://localhost:8765)。保持终端运行，在终端按 `Ctrl+C` 结束仿真。首次安装见下面的“从 clone 到运行”。
+
 ## 1. 支持环境
 
 - Ubuntu 24.04 x86_64，ROS 2 Jazzy，Gazebo Harmonic；Windows 使用 WSL2 Ubuntu 24.04 和 WSLg。
@@ -14,7 +25,7 @@
 
 先按 [ROS 2 Jazzy 官方安装说明](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html) 安装 ROS 并配置软件源；Gazebo 参考 [Harmonic 官方安装说明](https://gazebosim.org/docs/harmonic/install_ubuntu/)。不要混用 Gazebo Classic、ROS Humble 和本项目的 Jazzy 构建产物。
 
-建议把 clone 放在 Linux 用户目录中，例如 `~/work/click_navigation`，减少 WSL `/mnt/d` 文件系统的编译开销及时间戳警告。Windows 的浏览器仍可访问 WSL 中的 localhost 服务。
+**项目及依赖的完整路径必须使用英文、数字等 ASCII 字符，且不能含空格。** ROS Jazzy 的消息生成工具在中文路径（例如桌面的“新建文件夹”）下会把路径拆断，出现 `list index: 1 out of range` 和 `Inputs.idl does not exist`。请重新 clone 到 `~/work/click_navigation`；不要复制旧 `build/`、`install/`、`log/`。Linux 用户目录还可以减少 WSL `/mnt/d` 的编译开销及时间戳警告。Windows 浏览器仍可访问 WSL 中的 localhost 服务。
 
 ## 2. 从 clone 到运行
 
@@ -23,30 +34,29 @@
 当前仓库为**公共仓库**，任何人都可以查看、下载和执行下面的 HTTPS clone 命令，**无需登录 GitHub，也无需协作者邀请**。向本仓库直接提交代码仍需仓库所有者授予写入权限并完成身份验证；其他贡献者可以通过 Fork 和 Pull Request 提交修改。不要将访问令牌写入 clone 地址、脚本或提交到仓库。
 
 ```bash
+mkdir -p ~/work
+cd ~/work
 git clone https://github.com/hxsdds/click_navigation.git
 cd click_navigation
 
-# 安装本项目所需的系统包；需要 sudo，ROS 软件源必须已配置
-bash scripts/install_dependencies.sh
+# 推荐：按顺序安装、准备 PX4、构建、自检和测试；任一步失败会停止
+bash scripts/deploy.sh
 
-# 第一次准备 PX4 和 Agent，固定版本、源码构建，可能耗时较长
-bash scripts/setup_px4.sh
-
-# 构建本仓库的 ROS 2 包
-bash scripts/build.sh
-
-# 检查地图、消息类型、运行依赖与动态库
-source scripts/env.sh
-python3 scripts/doctor.py
-
-# 运行无需启动仿真的单元测试
-bash scripts/test.sh
-
-# 启动同一世界中的机器狗、无人机和网页服务
+# 上面全部通过后再启动
 CLICK_NAV_GUI=true bash scripts/start_click_navigation.sh
 ```
 
-浏览器打开 **http://localhost:8765**。保留启动终端；使用 `Ctrl+C` 正常结束，脚本先停止导航，再清理本次仿真进程。不要同时启动旧项目的 Gazebo/PX4 或另一个点击导航实例。
+`deploy.sh` 会使用 sudo 安装系统依赖，自动配置 Gazebo 官方软件源；ROS 2 Jazzy 需要事先安装。Agent 只启用导航所需功能，关闭不需要的 P2P，避免额外查找 `microxrcedds_client`。初次源码下载和编译可能耗时较长，不要因暂时没有输出就并行启动第二份安装。
+
+请用普通用户运行 `deploy.sh`，不要对整个部署脚本使用 sudo。如果 PyPI 官方源下载很慢，可以只对这次部署使用[清华 PyPI HTTPS 镜像](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)，不改变全局配置：
+
+```bash
+PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple bash scripts/deploy.sh
+```
+
+下载中断时，在同一英文路径中重新执行部署命令即可复用已完成的下载和构建。若提示依赖源码版本不匹配，应先核对该目录来源，不要手工跳过版本校验。
+
+部署失败时先处理终端里的第一个错误，再重新运行部署命令。不要同时启动旧项目的 Gazebo/PX4 或另一个点击导航实例。
 
 ### 已有同版本本地 PX4 运行缓存
 
@@ -61,7 +71,7 @@ python3 scripts/doctor.py
 
 导入会把所需文件**实际复制**到本项目 `_deps/`，不会建立指向原项目的链接，也不复制旧 `gz_env.sh` 中的绝对路径。仅适合同一 Ubuntu/架构以及同版本依赖。不要把 Windows 二进制当作 Linux SITL 缓存导入。
 
-本次交付目录已准备本机运行缓存并重新编译，可直接从 `source scripts/env.sh` 和启动命令开始。**别人 clone 后不会得到被 Git 忽略的 `_deps/`、`build/`、`install/`，仍须执行准备和构建步骤。**
+**clone 后不会得到被 Git 忽略的 `_deps/`、`build/`、`install/`，必须执行准备和构建步骤。** 是否可以跳过准备应以当前目录的 `doctor.py` 全部通过为准，不能根据别的工作空间运行成功来判断。
 
 ### 只启动一个平台 / 无 GUI
 

@@ -8,6 +8,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -28,7 +29,13 @@ def main():
     check('ROS-independent planner', (ROOT/'scripts/plan_3d.py').is_file())
     if not args.source_only:
         deps = Path(os.environ.get('PX4_DEPS_DIR', ROOT/'_deps')).resolve()
-        check('workspace built', (ROOT/'install/local_setup.bash').is_file())
+        markers = []
+        for package in packages:
+            name = ET.parse(package).getroot().findtext('name')
+            markers.append(ROOT/'install'/name/'share/ament_index/resource_index/packages'/name)
+        missing = [str(p.relative_to(ROOT/'install')) for p in markers if not p.is_file()]
+        check('workspace packages installed', (ROOT/'install/local_setup.bash').is_file() and not missing,
+              ', '.join(missing))
         for command in ('ros2', 'gz'):
             check(command, shutil.which(command) is not None)
         for name in ('rclpy', 'numpy', 'px4_msgs.msg', 'control_input_msgs.msg', 'nav2_msgs.action'):
@@ -39,6 +46,7 @@ def main():
                 check(name, False, str(exc))
         for rel in ('px4_runtime_v1.17.0/bin/px4', 'px4_runtime_v1.17.0/bin/px4-alias.sh',
                     'px4_runtime_v1.17.0/bin/px4-commander', 'agent_system_build/MicroXRCEAgent',
+                    'px4_runtime_v1.17.0/rootfs/etc/init.d-posix/rcS', 'px4_runtime_v1.17.0/server.config',
                     'px4_runtime_v1.17.0/models/x500/model.sdf', 'px4_runtime_v1.17.0/models/x500_base/model.sdf'):
             check(rel, (deps/rel).is_file())
         for rel in ('px4_runtime_v1.17.0/bin/px4','agent_system_build/MicroXRCEAgent'):

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -eo pipefail
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+source "$root/scripts/check_build_path.sh"
 source /opt/ros/jazzy/setup.bash
 cd "$root"
 # Use only this source tree; do not source an old project install as an underlay.
